@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    display: flex;
+}
+
+header {
+    height: 49px;
+    width: 1441;
+    background-color: #C8D25C;
+    justify-content: space-between;
+}
+
+header p {
+  color: #FFFFFF;
+  font-family: Lato;
+  line-height: 62px;
+  width: 145px;
+  text-align: center;
+}
+
+header img {
+  width: 28px;
+  height: 29px;
+  margin: 0px 10px 0px 10px;
+}
+
+menu {
+  background-color: #285D56;
+  width: 1441px;
+  height: 98px;
+  display: flex;
+}
+menu img{
+  width: 181px;
+  height: 83px;
+}
+menu input{
+
+}
+
+.carrossel img{
+    width: 100%;
+}
