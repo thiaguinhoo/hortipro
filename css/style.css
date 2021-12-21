@@ -5,48 +5,65 @@
 }
 
 body {
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.733);
 }
 
 header {
     display: flex;
-}
-
-header {
-    height: 49px;
-    width: 1441;
+    height: 40px;
+    width: 520px;
     background-color: #C8D25C;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-header p {
+header a p{
   color: #FFFFFF;
   font-family: Lato;
-  line-height: 62px;
+  line-height: 40px;
   width: 145px;
   text-align: center;
 }
 
-header img {
-  width: 28px;
-  height: 29px;
-  margin: 0px 10px 0px 10px;
+.social img{
+  display: inline-block;
+  width: 19px;
+  height: 20px;
+  margin: 7px 4px 0px 4px;
 }
 
 menu {
   background-color: #285D56;
   width: 1441px;
-  height: 98px;
+  height: 48px;
   display: flex;
 }
+
+menu a p{
+  margin: 7px 7px 0px 0px;
+  font-size: 13px;
+  color: #FFFFFF;
+  text-align: justify;
+  display: flex;
+}
+
 menu img{
-  width: 181px;
-  height: 83px;
+  height: 100%;
 }
 menu input{
-
+  margin: 11px 0px 0px 0px;
+  height: 22px;
 }
 
 .carrossel img{
-    width: 100%;
+    width: 520px;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  align-content: center;
+}
+
+footer img{
+  height: 100%;
 }
