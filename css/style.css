@@ -1,44 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.733);
+  max-width: 1200px;
+  width: 100%;
+  background-color: #B4C6A6;
 }
 
-header {
-    display: flex;
-    height: 40px;
-    width: 520px;
-    background-color: #C8D25C;
-    justify-content: space-around;
-}
-
-header a p{
-  color: #FFFFFF;
-  font-family: Lato;
-  line-height: 40px;
-  width: 145px;
-  text-align: center;
-}
-
-.social img{
-  display: inline-block;
-  width: 19px;
+header{
+  display: flex;
+  background-color: #C8D25C;
   height: 20px;
-  margin: 7px 4px 0px 4px;
+  width: 100%;
 }
 
-menu {
+header a p {
+  color: white;
+  margin-right: 60px;
+}
+
+.social {
+  position: absolute;
+  right: 1vw;
+}
+.social img{
+  align-items: center;
+  width: 16px;
+  padding-top: 1.5px;
+}
+
+
+nav {
   background-color: #285D56;
-  width: 1441px;
+  width: 100%;
   height: 48px;
   display: flex;
+  align-items: center;
 }
 
-menu a p{
+nav a p{
   margin: 7px 7px 0px 0px;
   font-size: 13px;
   color: #FFFFFF;
@@ -46,24 +49,112 @@ menu a p{
   display: flex;
 }
 
-menu img{
-  height: 100%;
+nav img{
+  height: 45px
 }
-menu input{
-  margin: 11px 0px 0px 0px;
-  height: 22px;
+nav input {
+  align-self: center;
+  height: 30px;
+  border-radius: 8px;
+}
+.links {
+  display: flex;
 }
 
-.carrossel img{
-    width: 520px;
+nav a li {
+  display: flex;
+  color: white;
+  margin: 0px 10px 0px 10px;
+}
+
+.carrinho {
+  position: fixed;
+  right: 10px;
+}
+
+.carrinho img {
+  width: 30px;
+}
+
+.carrossel {
+  margin: 30px 0px 0px 0px;
+}
+
+.carrossel img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 footer {
-  height: 100px;
   display: flex;
-  align-content: center;
+
+  margin: 30px 0px 0px 0px;
+  color: black;
+  background-color: #285D56;
+}
+footer a p{
+  color: white;
+  font-size: 12px;
+}
+footer img{
+  margin: 20px 0px 0px 0px;
+  border-radius: 10px;
+  width: 15vw;
 }
 
-footer img{
-  height: 100%;
+.institucional, .serviços, .oportunidades {
+  background-color: #285D56;
+  margin: 0px 20px 0px 0px;
+  align-self: center;
 }
+
+.newslater {
+  background-color: #285D56;
+  align-self: center;
+  margin-bottom: 25px;
+  position: absolute;
+  right: 80px;
+}
+
+
+.social1 {
+  position: absolute;
+  right: 195px;
+  margin-top: 6vh;
+}
+.social1 img{
+  align-items: center;
+  width: 16px;
+}
+
+@media screen and (max-width: 720px) {
+  .links {
+      flex-direction: column;
+}
+}
+
+@media screen and (max-width: 815px) {
+  footer {
+    position: fixed;
+    flex-direction: column;
+}
+}
+
+/*.menu {
+/*  border-radius: 10px;
+/*  background: transparent;
+/*  border: 1px solid #66ffa6;
+/*  height: 50px;
+/*  width: 50px;
+/*  padding: 10px;
+/*}
+/*
+/*.menu a li {
+/*  display: block;
+/*  position: relative;
+/*  border-radius: 5px;
+/*  background-color: #66ffa6;
+/*  height: 4px;
+/*  width: 100%;
+/*  margin-bottom: 7px;
+/*}
