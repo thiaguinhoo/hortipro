@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1920px;
   width: 100%;
   background-color: #B4C6A6;
   height: 1800px;
@@ -95,19 +95,23 @@ nav .carrinho img {
 }
 
 .carrossel {
-  margin: 80px 0px 0px 0px;
+  margin: 80px 0 ;
 }
 
 .carrossel img {
-  width: 100%;
-  border-radius: 5px;
+  display: table-row;
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 30px;
 }
 
 footer {
-  display: flex;
-  margin: 30px 0px 0px 0px;
-  color: black;
-  background-color: #285D56;
+ display: flex;
+ margin: 30px auto;
+ width: 100%;
+ color: rgb(26, 207, 117);
+ background-color: #285D56;
+ text-align: left;
 }
 
 footer a p{
@@ -118,22 +122,23 @@ footer a p{
 footer img{
   margin: 20px 0px 0px 0px;
   border-radius: 10px;
-  width: 15vw;
+  width: 8vw;
 }
 
 .institucional, .serviços, .oportunidades {
   background-color: #285D56;
   margin: 0px 20px 0px 0px;
   align-self: center;
+  display: inline-block ;
+
 }
 
-.newslater {
+.newsletter {
   background-color: #285D56;
   align-self: center;
   margin-bottom: 25px;
   right: 80px;
 }
-
 
 .social1 {
   right: 195px;
