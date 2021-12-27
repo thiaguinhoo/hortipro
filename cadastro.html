@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./cadastro.css" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        
+
+    <h1>Cadastre-se</h1>
+    <h2>Insira suas informações para criar uma conta</h2>
+    <form>
+        <label>Você é:</label>
+        <br>
+        <input type="radio" id="client" name="Você" value="client"><label for="client">*Sou Cliente</label>
+        <input type="radio" id="productor" name="Você" value="productor"><label for="productor">*Sou Produtor</label> 
+    </form>
+
+    </header>
+    <br>
+    <form >
+        <label for="nome">*Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+        <br><br>
+        <label for="sobrenome">*Sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite o seu sobrenome" required>
+        <br><br>
+        <label for="email">*Seu E-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+        
+        <br><br>
+
+        <label for="diaa">Data de aniversário</label>
+        <input type="date" id="diaa" name="diaa">
+        <br><br>
+        <label for="cpf">*CPF</label>
+        <input type="text" id="campo_cpf" placeholder="Apenas Números" required>
+        <br><br>
+
+        <Label>*CEP</Label>
+        <input type="text" id="campo_cep" pattern="[0-9]{8}" required placeholder="xxxxx-xxx" >
+
+        <label for="endereço">*Número</label>
+        <input type="text" id="campo_numero" placeholder="n°123" required>
+        <br><br>
+
+        <label for="endereço">*Endereço</label>
+        <input type="text" id="campo_endereço" placeholder="Rua A" required>
+
+        <br><br>
+
+        <label for="endereço">*Estado</label>
+        <input type="text" id="campo_estado" placeholder="Seu Estado" required>
+
+        <label for="endereço">*Cidade</label>
+        <input type="text" id="campo_cidade" placeholder="Sua Cidade" required>
+
+        <br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxx-xxxx">
+
+        <label for="telefone">Celular</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+        <br><br>
+
+        <label for="senha">*Senha</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="senha">*Confirmar senha</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+
+        <br><br>
+        <input type="radio" id="termo de aceite" name="termo de aceite" value="termo de aceite"><label for="termo de aceite">Lí e aceito os TERMOS DE USO</label>
+        <input type="radio" id="termo de ofertas" name="termo de ofertas" value="termo de ofertas"><label for="termo de ofertas">Receba nosso catálogo de ofertas!</label> 
+        
+    </form>
+    
+</body>
+</html>
