@@ -66,6 +66,10 @@ nav img{
   height: 40px;
 }
 
+.put {
+  align-items: flex-start;
+}
+
 nav input {
   display: inline-block;
   align-self: center;
@@ -133,16 +137,19 @@ footer img{
   display: inline-block ;
 }
 
-.newsletter {
+.newslatter {
+  position: absolute;
   background-color: #285D56;
   align-self: center;
   margin-bottom: 25px;
-  right: 80px;
+  right: 3vw;
 }
 
 .social1 {
-  right: 195px;
-  margin-top: 6vh;
+  display: inline-flex;
+  position: absolute;
+  right: 12rem;
+  top: 1.5rem;
 }
 
 .social1 img{
@@ -158,25 +165,18 @@ footer img{
 
 @media screen and (max-width: 815px) {
   footer {
+    align-items: center;
     flex-direction: column;
 }
+  footer .newslatter {
+    position: relative;
+    align-self: center;
+    padding-left: 20vw;
 }
-
-/*.menu {
-/*  border-radius: 10px;
-/*  background: transparent;
-/*  border: 1px solid #66ffa6;
-/*  height: 50px;
-/*  width: 50px;
-/*  padding: 10px;
-/*}
-/*
-/*.menu a li {
-/*  display: block;
-/*  position: relative;
-/*  border-radius: 5px;
-/*  background-color: #66ffa6;
-/*  height: 4px;
-/*  width: 100%;
-/*  margin-bottom: 7px;
-/*}
+  footer .institucional, .serviços, .oportunidades {
+    align-self: center
+  }
+  footer .serviços {
+    padding-right: 40px;
+  }
+}
