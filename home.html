@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <title>Home Page</title>
 </head>
 
@@ -29,25 +31,30 @@
             <input type="text" value="buscar itens">
             <input type="submit" value="Buscar">
         </div>
-        <div class="links">
-            <li><a href="" target="_blank">
-                    Promoções
-                </a></li>
-            <li><a href="" target="_blank">
-                    Frutas
-                </a></li>
-            <li><a href="" target="_blank">
-                    Legumes
-                </a></li>
-            <li><a href="" target="_blank">
-                    Verduras
-                </a></li>
-            <li><a href="" target="_blank">
-                    Mercearia
-                </a></li>
-            <li><a href="" target="_blank">
-                    Entrega aí?
-                </a></li>
+        <div class="menu">
+            <div id="myLinks">
+                <li><a href="" target="_blank">
+                        Promoções
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Frutas
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Legumes
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Verduras
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Mercearia
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Entrega aí?
+                    </a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div class="carrinho">
             <a href="" target="_blank"><img src="./img/carrinho.png" alt="Carrinho"></a>
@@ -105,8 +112,6 @@
             </div>
         </div>
     </footer>
-    <script src="mobile-navbar.js"></script>
-
 </body>
 
 </html>

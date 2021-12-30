@@ -77,9 +77,13 @@ nav input {
   border-radius: 8px;
 }
 
-.links {
+#myLinks {
   display: flex;
   list-style: none;
+}
+
+.icon {
+  display: none;
 }
 
 nav li a {
@@ -156,6 +160,46 @@ footer img{
   align-items: center;
   width: 16px;
 }
+
+@media screen and (max-width: 815px) {
+  .carrinho{
+    margin-top: 10vh;
+    margin-right: 1vh;
+  }
+
+@media screen and (max-width: 815px) {
+  .menu {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#myLinks {
+  display: none;
+}
+}
+.menu a {
+  color:white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a.icon {
+  background: #285D56;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: black;
+}
+}
+
+
 
 @media screen and (max-width: 810px) {
   .links {
