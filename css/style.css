@@ -51,6 +51,7 @@ nav {
   align-items: center;
   border-radius: 5px;
   justify-content: space-between;
+  z-index: 10;
 }
 
 nav li {
@@ -171,6 +172,9 @@ footer img{
   .menu {
     overflow: hidden;
     background-color: #333;
+    margin-top: 33vh;
+    opacity: 0.9;
+    width: 50vw;
 }
 
 #myLinks {
