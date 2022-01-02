@@ -195,7 +195,7 @@ footer img{
   display: inline-block ;
 }
 
-.newslatter {
+.newsletter {
   position: absolute;
   background-color: #285D56;
   align-self: center;
@@ -266,7 +266,7 @@ footer img{
     align-items: center;
     flex-direction: column;
 }
-  footer .newslatter {
+  footer .newsletter {
     position: relative;
     align-self: center;
     padding-left: 20vw;
@@ -277,3 +277,4 @@ footer img{
   footer .serviços {
     padding-right: 40px;
   }
+}
