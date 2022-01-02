@@ -114,6 +114,60 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
+.informativos img {
+  width: 500px;
+  height: 700px;
+  margin: 50px
+}
+
+.informativos {
+  display: flex;
+  margin: 10px;
+  color: green;
+}
+
+.informativos h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.informativos p{
+  font-size: 25px;
+  text-align: justify;
+  margin: 25px 75px 75px 100px;
+}
+
+.receita img {
+  width: 500px;
+  height: 400px;
+  margin: 50px
+}
+
+.receita {
+  display: flex;
+  color: green;
+  margin: 10px;
+}
+
+.receita h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.receita p{
+  font-size: 25px;
+  text-align: justify;
+  margin: 25px 75px 75px 100px;
+}
+
+#frutas{
+  float:left
+}
+
+#receitas{
+  float:left
+}
+
 footer {
  display: flex;
  margin: 30px auto;
@@ -142,7 +196,7 @@ footer img{
   display: inline-block ;
 }
 
-.newslatter {
+.newsletter {
   position: absolute;
   background-color: #285D56;
   align-self: center;
@@ -216,7 +270,7 @@ footer img{
     align-items: center;
     flex-direction: column;
 }
-  footer .newslatter {
+  footer .newsletter {
     position: relative;
     align-self: center;
     padding-left: 20vw;
