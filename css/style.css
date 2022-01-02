@@ -17,7 +17,9 @@ header{
   background-color: #C8D25C;
   height: 20px;
   width: 100%;
-  top: 0px
+  top: 0px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 header a {
@@ -31,7 +33,7 @@ header a p{
 
 .social {
   position: absolute;
-  right: 2vw;
+  right: 3vw;
 }
 
 .social img{
@@ -49,8 +51,8 @@ nav {
   height: 48px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  justify-content: space-between;
+  z-index: 10;
+  padding-left: 4vw;
 }
 
 nav li {
@@ -62,24 +64,32 @@ nav li {
 }
 
 nav img{
-  align-self: center;
   height: 40px;
 }
 
 .put {
-  align-items: flex-start;
+  display: flex;
+  background-color: #285D56;
+  width: 40vw;
+  justify-content: center;
 }
 
 nav input {
-  display: inline-block;
-  align-self: center;
   height: 23px;
-  border-radius: 8px;
+  background: whitesmoke;
+  width: 250px;
+  height: 35px;
+}
+
+nav button {
+  background: whitesmoke;
+  width: 60px;
 }
 
 #myLinks {
   display: flex;
   list-style: none;
+  top: 10px;
 }
 
 .icon {
@@ -91,10 +101,21 @@ nav li a {
   color: white;
   margin: 0px 10px 0px 10px;
   text-decoration: none;
+  height: 48px;
+  padding-top: 15px;
+}
+
+nav li a:hover {
+  color: black;
+  background: #fff;
+  transition: .7s;
+  border-radius: 5px;
 }
 
 .carrinho {
-  margin-right: 3vw;
+  display: flex;
+  position: absolute;
+  right: 4vw;
 }
 
 nav .carrinho img {
@@ -219,18 +240,22 @@ footer img{
   .carrinho{
     margin-top: 10vh;
     margin-right: 1vh;
+    right: 0vw;
   }
 
-@media screen and (max-width: 815px) {
   .menu {
     overflow: hidden;
     background-color: #333;
+    margin-top: 34vh;
+    opacity: 0.9;
+    width: 50vw;
 }
 
-#myLinks {
+
+#myLinks{
   display: none;
 }
-}
+
 .menu a {
   color:white;
   padding: 14px 16px;
@@ -250,6 +275,7 @@ footer img{
 .menu a:hover {
   background-color: #fff;
   color: black;
+  transition: .4s;
 }
 }
 
