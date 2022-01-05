@@ -109,31 +109,13 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
-.chamadoprodutor {
-  display: flex;
-  margin: 0px;
-}
-
 .chamadoprodutor img {
-  width: 1600px;
-  height: 600px;
-  margin: 5px
-  width: 100%;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
-.chamadoprodutor h2{
-  font-size: 25px;
-  text-align: center;
-  color: green;
-}
-
-
-.chamadoprodutor p{
-  font-size: 18px;
-  text-align: justify;
-  color: green;
-}
 
 .informativos img {
   width: 400px;
@@ -159,16 +141,15 @@ nav .carrinho img {
 }
 
 .receita img {
-  width: 400px;
-  height: 300px;
-  margin: 50px
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .receita {
-  display: flex;
   color: green;
   margin: 10px;
-  width: 20vw;
 }
 
 .receita h2{
@@ -178,7 +159,7 @@ nav .carrinho img {
 
 .receita p{
   font-size: 18px;
-  text-align: justify;
+  text-align: center;
   margin: 25px 75px 75px 100px;
 }
 
@@ -253,15 +234,7 @@ footer img{
     padding-right: 40px;
   }
 }
-#produtor{
-  float:center
-}
 
 #frutas{
   float:left
 }
-
-#receitas{
-  float:center
-}
-
