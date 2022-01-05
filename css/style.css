@@ -315,25 +315,39 @@ margin-top: 10px;
        
        width: 30%;
        margin-left:0px;
+       
       
      
       } 
       div.li-c ul li img{
         float: left;
         margin-top: 5px;
-        margin-right: 40px;
+        margin-right: 20px;
         width: 90px;
         height: 90px;
         
       }
+      div.li-a ul li a,div.li-b ul li a{
+        text-decoration: none;
+        color: #000000;
+      }
+      div.li-c ul li.input{
+        position: absolute;
+        margin-top: 130px;
+      }
 
-      div.li-c ul li img.logo{
-        float: left;
-        margin-top: 5px;
+      div.li-c ul li.logo img{
+       position: absolute;
+        margin-top: 16px;
         margin-right: 0px;
-        width: 200px;
-        height: 120px;
+        margin-left: 24px;
+        width: 180px;
+        height: 180px;
 
+      }
+      div.li-c ul li.inscreva-se h2{
+       position: absolute;
+       margin-top: 100px;
       }
 
       div.li-c ul li h2 {color: #B4C6A6;}
@@ -388,7 +402,7 @@ margin-top: 10px;
       font-size: 20px;
       margin-top: 28px;
       margin-left:5px;
-      margin-bottom:10px;
+      margin-bottom:30px;
         }
 
         footer.footer2 img{
@@ -397,7 +411,7 @@ margin-top: 10px;
           height:30px;
           margin-top: 28px;
           margin-left:0px;
-          margin-bottom:5px;
+          margin-bottom:20px;
           margin-right: 50px;
          
         }
