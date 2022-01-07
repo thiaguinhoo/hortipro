@@ -109,9 +109,17 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
+.chamadoprodutor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
 .informativos img {
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
   margin: 50px
 }
 
@@ -122,36 +130,36 @@ nav .carrinho img {
 }
 
 .informativos h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .informativos p{
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
   margin: 25px 75px 75px 100px;
 }
 
 .receita img {
-  width: 500px;
-  height: 400px;
-  margin: 50px
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .receita {
-  display: flex;
   color: green;
   margin: 10px;
 }
 
 .receita h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .receita p{
-  font-size: 25px;
-  text-align: justify;
+  font-size: 18px;
+  text-align: center;
   margin: 25px 75px 75px 100px;
 }
 
@@ -235,4 +243,10 @@ footer img{
   }
 }
 
+<<<<<<< HEAD
 
+=======
+#frutas{
+  float:left
+}
+>>>>>>> 29f8df957d1d4bf8aa94fbb0a2712e4f51747a17
