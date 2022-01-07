@@ -137,9 +137,17 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
+.chamadoprodutor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
 .informativos img {
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
   margin: 50px
 }
 
@@ -150,36 +158,36 @@ nav .carrinho img {
 }
 
 .informativos h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .informativos p{
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
   margin: 25px 75px 75px 100px;
 }
 
 .receita img {
-  width: 500px;
-  height: 400px;
-  margin: 50px
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .receita {
-  display: flex;
   color: green;
   margin: 10px;
 }
 
 .receita h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .receita p{
-  font-size: 25px;
-  text-align: justify;
+  font-size: 18px;
+  text-align: center;
   margin: 25px 75px 75px 100px;
 }
 
@@ -533,10 +541,12 @@ margin-top: 10px;
   footer .serviços {
     padding-right: 40px;
   }
-<<<<<<< HEAD
+
 }
-<<<<<<< HEAD
-=======
+
+#frutas{
+  float:left
+}
  
 /*.menu {
 /*  border-radius: 10px;
@@ -556,7 +566,4 @@ margin-top: 10px;
 /*  width: 100%;
 /*  margin-bottom: 7px;
 /*}
->>>>>>> Maristella
-=======
-}
->>>>>>> f97ab2fad050623bed8d903c39302b8d1c57f046
+
