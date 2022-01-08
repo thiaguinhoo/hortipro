@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,9 +17,7 @@ header{
   background-color: #C8D25C;
   height: 20px;
   width: 100%;
-  top: 0px;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  top: 0px
 }
 
 header a {
@@ -33,7 +31,7 @@ header a p{
 
 .social {
   position: absolute;
-  right: 3vw;
+  right: 2vw;
 }
 
 .social img{
@@ -51,8 +49,8 @@ nav {
   height: 48px;
   display: flex;
   align-items: center;
-  z-index: 10;
-  padding-left: 4vw;
+  border-radius: 5px;
+  justify-content: space-between;
 }
 
 nav li {
@@ -64,61 +62,35 @@ nav li {
 }
 
 nav img{
+  align-self: center;
   height: 40px;
 }
 
 .put {
-  display: flex;
-  background-color: #285D56;
-  width: 40vw;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 nav input {
+  display: inline-block;
+  align-self: center;
   height: 23px;
-  background: whitesmoke;
-  width: 250px;
-  height: 35px;
+  border-radius: 8px;
 }
 
-nav button {
-  background: whitesmoke;
-  width: 60px;
-}
-
-#myLinks {
+.links {
   display: flex;
   list-style: none;
-  top: 10px;
-}
-
-.icon {
-  display: none;
 }
 
 nav li a {
   display: flex;
   color: white;
+  margin: 0px 10px 0px 10px;
   text-decoration: none;
-  text-align: center;
-  height: 48px;
-  padding-top: 15px;
-  width: 78px;
-  justify-content: center;
-}
-
-nav li a:hover {
-  color: black;
-  background: #fff;
-  transition: .7s;
-  border-radius: 5px;
 }
 
 .carrinho {
-  display: flex;
-  position: absolute;
-  right: 4vw;
-  top: 10px;
+  margin-right: 3vw;
 }
 
 nav .carrinho img {
@@ -137,9 +109,17 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
+.chamadoprodutor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
 .informativos img {
-  width: 500px;
-  height: 700px;
+  width: 400px;
+  height: 500px;
   margin: 50px
 }
 
@@ -150,36 +130,36 @@ nav .carrinho img {
 }
 
 .informativos h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .informativos p{
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
   margin: 25px 75px 75px 100px;
 }
 
 .receita img {
-  width: 500px;
-  height: 400px;
-  margin: 50px
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .receita {
-  display: flex;
   color: green;
   margin: 10px;
 }
 
 .receita h2{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 
 .receita p{
-  font-size: 25px;
-  text-align: justify;
+  font-size: 18px;
+  text-align: center;
   margin: 25px 75px 75px 100px;
 }
 
@@ -219,7 +199,7 @@ footer img{
   display: inline-block ;
 }
 
-.newsletter {
+.newslatter {
   position: absolute;
   background-color: #285D56;
   align-self: center;
@@ -238,287 +218,6 @@ footer img{
   align-items: center;
   width: 16px;
 }
-/*-------------New Footer Section-------------- */
-/*-------------New Footer Section-------------- */
-
-footer{
-  display: flex;
-  margin: 0px;
-  width: 100%;
-  justify-content: center;
-}
-
-.container-F{
-
-  
-  width:100%;
-  height: 180px;
-  margin: 0px ;
-  background-color: #285d56;
- }
-
-
- .container-F ul{
-  
-   color: black;
-   list-style: none;
- } 
-div.li-a ul li h2,div.li-b ul li h2 {
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  font-weight:bold;
-  letter-spacing: 1.3;
-  color: #B4C6A6;
-  margin-bottom: 15px
-}
-
-div.li-a ul li h3,div.li-b ul li h3 {
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  font-weight:bold;
-  letter-spacing: 0px;
-  color: #98ad8c;
-  margin-bottom: 10px
-}
- .container-F div.li-a {
-  
-padding: 5px;
-  float: left;
-margin-top: 10px;
-  margin-left: 30px;  
- width: 30%;
-  
-  line-height: 1.3;
-  font-family:'Roboto', sans-serif;
-  letter-spacing: 5px;
-  } 
-
-  .container-F div.li-b {
-   
-    padding: 5px;
-    float: left;
-     width: 30%;
-    margin-top: 10px;
-    margin-left: 0px;   
-    line-height: 1.3;
-    font-family:'Roboto', sans-serif;
-    letter-spacing: 6px;
-    } 
-
-    .container-F div.li-c {
-      
-      padding: 5px;
-      float: left;
-      margin-top: 10px;   
-       
-       width: 30%;
-       margin-left:0px;
-       
-      
-     
-      } 
-      div.li-c ul li img{
-        float: left;
-        margin-top: 5px;
-        margin-right: 20px;
-        width: 50px;
-        height: 50px;
-        
-      }
-      div.li-a ul li a,div.li-b ul li a{
-        text-decoration: none;
-        color: #b5c69b;
-      }
-      div.li-c ul li.input{
-        position: absolute;
-        margin-top: 130px;
-      }
-
-      div.li-c ul li.logo img{
-       position: absolute;
-        margin-top: -34px;
-        margin-right: 0px;
-        margin-left: 65px;
-        margin-bottom: 30px;
-        width: 200PX;
-        height: 200px;
-
-      }
-      div.li-c ul li.inscreva-se h2{
-       position: absolute;
-       margin-top: 70px;
-      }
-
-      div.li-c ul li h2 {color: #B4C6A6;}
-
-    
-
-      div.li-c ul li input{
-        position: absolute;
-        color: #B4C6A6; 
-        width: 170px;
-        height: 28px;
-        margin-top: -25px;
-        margin-bottom: 40px;
-        font-size: 18px;
-           }
-         
-  
-          div.clear{
-            clear: both;
-          }
-  
-      /*--footer2-- */
-        /*--footer2-- */
-
-    footer.footer2{
-    
-    width: 100%;
-    height: 26px;
-    margin: 0px;
-    margin-top:0px;
-   /* background-color:#285D56;*/
-   background-color:#467a73;
-
-    
-  }
-  footer.footer2 ul li {
-   
-  display: inline-block;
-    list-style: none;
-    color: #FFFFFF;
-   
-      }
-
-      footer.footer2 h3{
-        
-        font-family: monospace;
-        font-size: 16px;
-        margin-top: -20px;
-        margin-left:25px;
-        margin-bottom: 30px;
-        margin-right: 5px;
-          }
-          footer.footer2 ul li h3 a{
-            font-size: 20px;
-          }
-      
-    footer.footer2 h4{
-
-      font-family: monospace;
-      font-size: 16px;
-      margin-top: 5px;
-      margin-left:5px;
-      margin-bottom:36px;
-        }
-
-        footer.footer2 img{
-          
-          width: 25px;
-          height:30px;
-          margin-top: 28px;
-          margin-left:0px;
-          margin-bottom:20px;
-          margin-right: 50px;
-         
-        }
-        
-
-
-  
-
-/*RESPONSIVIDADE--------------*/
-
-.frutas {
-  position: absolute;
-  width: 65vw;
-  margin-left: 3vw;
-  top: 100px;
-}
-
-
-.frutas h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.frutas h2 {
-  margin-bottom: 1vh;
-}
-
-.frutas h3 {
-  margin-bottom: 1vh;
-}
-
-.frutas p {
-  margin-bottom: 2vh;
-}
-
-.frutas p:nth-last-child(-n+2)
-{
-  flex-wrap: wrap;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.frutas img {
-  float: left;
-  width: 29vw;
-  margin-right: 5vw;
-}
-
-.frete {
-  position: absolute;
-  top: 70vh;
-  width: 312px;
-}
-
-@media screen and (max-width: 815px) {
-  .carrinho{
-    margin-top: 40px;
-    margin-right: 1vh;
-    right: 0vw;
-  }
-
-  .menu {
-    overflow: hidden;
-    background-color: #333;
-    margin-top: 34vh;
-    opacity: 0.9;
-    width: 50vw;
-}
-
-
-#myLinks{
-  display: none;
-}
-
-.menu a {
-  color:white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.menu a.icon {
-  background: #285D56;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.menu a:hover {
-  background-color: #fff;
-  color: black;
-  transition: .4s;
-}
-}
-
-
 
 @media screen and (max-width: 810px) {
   .links {
@@ -542,10 +241,12 @@ margin-top: 10px;
   footer .serviços {
     padding-right: 40px;
   }
-<<<<<<< HEAD
+
 }
-<<<<<<< HEAD
-=======
+
+#frutas{
+  float:left
+}
  
 /*.menu {
 /*  border-radius: 10px;
@@ -565,7 +266,4 @@ margin-top: 10px;
 /*  width: 100%;
 /*  margin-bottom: 7px;
 /*}
->>>>>>> Maristella
-=======
-}
->>>>>>> f97ab2fad050623bed8d903c39302b8d1c57f046
+
