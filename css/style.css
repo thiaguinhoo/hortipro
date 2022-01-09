@@ -116,6 +116,7 @@ nav li a:hover {
   display: flex;
   position: absolute;
   right: 4vw;
+  top: 9px
 }
 
 nav .carrinho img {
@@ -437,6 +438,49 @@ footer img{
   width: 16px;
 } */
 /*--RESPONSIVIDADE*/
+
+@media screen and (max-width: 815px) {
+  .carrinho{
+    margin-top: 90px;
+    margin-right: 1vh;
+    right: 0vw;
+  }
+
+  .menu {
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 34vh;
+    opacity: 0.9;
+    width: 50vw;
+}
+
+
+#myLinks{
+  display: none;
+}
+
+.menu a {
+  color:white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a.icon {
+  background: #285D56;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: black;
+  transition: .4s;
+}
+}
 
 @media screen and (max-width: 810px) {
   .links {
