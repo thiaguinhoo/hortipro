@@ -384,6 +384,53 @@ margin-top: 10px;
          
         }
         
+/*COMO-COMPRAR*/
+
+section.como-comprar div.figuras-pag img{
+  background-image: url("/img/pix.png") ;
+  float: left;
+  width: 100%;
+  opacity: 50%;
+ }
+
+ section.como-comprar div.figuras-pag h2{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 20px;
+   margin-top: 20px;
+   color:#467a73;
+  
+ }
+ section.como-comprar div.figuras-pag p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color:#467a73;
+ }
+  div.boleto-cartao ul.li-1 img{
+    display:flex;
+    width: 33.3%;
+   background-position: top;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*COMO-COMPRAR*/
+
+
 
 
 /*FOOTER*/
