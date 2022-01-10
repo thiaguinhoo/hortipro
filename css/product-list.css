@@ -137,35 +137,7 @@ body {
     min-width: 100vw;
 }
 
-#main-container {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 10px;
-    padding:25px;
+section .div {
+  display: grid; 
+  background-color: #fff;
 }
-
-#main-container h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 2em;
-}
-
-#main-container h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 1.5em;
-}
-
-.info {
-    text-align: center;
-    justify-content: center;
-}
-
-.template {
-    display: none;
-}
-
-
-
