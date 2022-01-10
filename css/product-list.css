@@ -193,6 +193,10 @@ h3 {
   margin-left: 32%;
 }
 
+.produto:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .produto button:hover {
   background-color: #285D56;
   transition: 0.5s;
