@@ -70,7 +70,7 @@ body {
 
 .frutas hr:last-of-type {
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
 
 .item-info {
@@ -93,7 +93,7 @@ body {
     border: 2px solid #5A6978;
     border-radius: 65px;
     width: 312px;
-    height: 576px;
+    height: 450px;
 }
 
 .frete img {
@@ -132,13 +132,91 @@ body {
     margin-left: 45px;
 }
 
-.frete button {
+#adicionar {
     margin-left: 55px;
-    background: #17C730;
-    border-radius: 20px;
+    background: #00C21C;
+    border-radius: 5px;
     width: 200px;
     height: 40px;
-    color: #2D363A;
+    color: black;
     font-size: 17px;
     font-weight: bold;
+}
+
+#frete {
+    color: black;
+    background: #00C21C;
+    width: 70px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#frete:hover, #adicionar:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.outros-produtos {
+    display: flex;
+    width: 60%;
+    border-radius: 4px;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.outros-produtos h4{
+position: absolute;
+margin-top: 15px;
+margin-left: 30px;
+padding-bottom: 45px;
+color: black;
+font-family: Lato;
+font-size: 23px;
+line-height: 39px;
+}
+
+.produto {
+  display: block; 
+  background-color: #fff;
+  margin-top: 90px;
+  margin-right: 30px;
+  border-radius: 20px;
+  width: 320px;
+
+}
+
+.produto img{
+  border-radius: 20px;
+}
+
+.produto p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.produto button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  margin-left: 32%;
+}
+
+.produto:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.produto button:hover {
+  background-color: #285D56;
+  transition: 0.5s;
+  color: #fff;
 }

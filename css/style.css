@@ -10,8 +10,6 @@ body {
   background-color: #B4C6A6;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(45deg, #285D56, #C8D25C);
-  min-height: 300vh;
-  min-width: 100vw;
 }
 
 header{
