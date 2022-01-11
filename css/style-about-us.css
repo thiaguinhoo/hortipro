@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   width: 100%;
   background-color: #B4C6A6;
   font-style: #ADADAD;
-  height: 1800px;
+  height: 1400px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -182,50 +182,208 @@ nav .carrinho img {
 	opacity: 0.8;
 }
 
+
+/*-------------New Footer Section-------------- */
+/*-------------New Footer Section-------------- */
+
 footer {
- display: flex;
- margin: 30px 0 0 0;
- width: 100%;
- color: rgb(26, 207, 117);
- background-color: #285D56;
- text-align: left;
- justify-content: center;
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  justify-content: center;
+ }
+
+
+
+.container-F{
+
+  
+  width:100%;
+  height: 180px;
+  margin: 0px ;
+  background-color: #285d56;
+ }
+
+
+ .container-F ul{
+  
+   color: black;
+   list-style: none;
+ } 
+div.li-a ul li h2,div.li-b ul li h2 {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+  letter-spacing: 1.3;
+  color: #B4C6A6;
+  margin-bottom: 15px
 }
 
-footer a p{
-  color: white;
+div.li-a ul li h3,div.li-b ul li h3 {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
+  font-weight:bold;
+  letter-spacing: 0px;
+  color: #98ad8c;
+  margin-bottom: 10px
 }
+ .container-F div.li-a {
+  
+padding: 5px;
+  float: left;
+margin-top: 10px;
+  margin-left: 30px;  
+ width: 30%;
+  
+  line-height: 1.3;
+  font-family:'Roboto', sans-serif;
+  letter-spacing: 5px;
+  } 
 
-footer img{
-  margin: 20px 0px 0px 0px;
-  border-radius: 10px;
-  width: 8vw;
-}
+  .container-F div.li-b {
+   
+    padding: 5px;
+    float: left;
+     width: 30%;
+    margin-top: 10px;
+    margin-left: 0px;   
+    line-height: 1.3;
+    font-family:'Roboto', sans-serif;
+    letter-spacing: 6px;
+    } 
 
-.institucional, .serviços, .oportunidades {
-  background-color: #285D56;
-  margin: 0px 20px 0px 0px;
-  align-self: center;
-  display: inline-block ;
-}
+    .container-F div.li-c {
+      
+      padding: 5px;
+      float: left;
+      margin-top: 10px;   
+       
+       width: 30%;
+       margin-left:0px;
+       
+      
+     
+      } 
+      div.li-c ul li img{
+        float: left;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        
+      }
+      div.li-a ul li a,div.li-b ul li a{
+        text-decoration: none;
+        color: #b5c69b;
+      }
+      div.li-c ul li.input{
+        position: absolute;
+        margin-top: 130px;
+      }
 
-.newsletter {
-  background-color: #285D56;
-  align-self: center;
-  margin-bottom: 25px;
-  right: 80px;
-}
+      div.li-c ul li.logo img{
+       position: absolute;
+        margin-top: -34px;
+        margin-right: 0px;
+        margin-left: 65px;
+        margin-bottom: 30px;
+        width: 200PX;
+        height: 200px;
 
-.social1 {
-  right: 195px;
-  margin-top: 6vh;
-}
+      }
+      div.li-c ul li.inscreva-se h2{
+       position: absolute;
+       margin-top: 70px;
+      }
 
-.social1 img{
-  align-items: center;
-  width: 16px;
-}
+      div.li-c ul li h2 {color: #B4C6A6;}
+
+    
+
+      div.li-c ul li input{
+        position: absolute;
+        color: #B4C6A6; 
+        width: 170px;
+        height: 28px;
+        margin-top: -25px;
+        margin-bottom: 40px;
+        font-size: 18px;
+           }
+         
+  
+          div.clear{
+            clear: both;
+          }
+  
+      /*--footer2-- */
+        /*--footer2-- */
+
+    footer.footer2{
+    
+    width: 100%;
+    height: 26px;
+    margin: 0px;
+    margin-top:0px;
+   /* background-color:#285D56;*/
+   background-color:#467a73;
+
+    
+  }
+  footer.footer2 ul li {
+   
+  display: inline-block;
+    list-style: none;
+    color: #FFFFFF;
+   
+      }
+
+      footer.footer2 h3{
+        
+        font-family: monospace;
+        font-size: 16px;
+        margin-top: -20px;
+        margin-left:25px;
+        margin-bottom: 30px;
+        margin-right: 5px;
+          }
+          footer.footer2 ul li h3 a{
+            font-size: 20px;
+          }
+      
+    footer.footer2 h4{
+
+      font-family: monospace;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-left:5px;
+      margin-bottom:36px;
+        }
+
+        footer.footer2 img{
+          
+          width: 25px;
+          height:30px;
+          margin-top: 28px;
+          margin-left:0px;
+          margin-bottom:20px;
+          margin-right: 50px;
+         
+        }
+        
+
+
+/*FOOTER*/
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+/*RESPONSIVIDADE*/
 
 @media screen and (max-width: 810px) {
   .links {
