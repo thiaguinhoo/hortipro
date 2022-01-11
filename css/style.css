@@ -17,7 +17,9 @@ header{
   background-color: #C8D25C;
   height: 20px;
   width: 100%;
-  top: 0px
+  top: 0px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 header a {
@@ -31,7 +33,7 @@ header a p{
 
 .social {
   position: absolute;
-  right: 2vw;
+  right: 3vw;
 }
 
 .social img{
@@ -49,8 +51,8 @@ nav {
   height: 48px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
-  justify-content: space-between;
+  z-index: 10;
+  padding-left: 4vw;
 }
 
 nav li {
@@ -62,24 +64,36 @@ nav li {
 }
 
 nav img{
-  align-self: center;
   height: 40px;
 }
 
 .put {
-  align-items: flex-start;
+  display: flex;
+  background-color: #285D56;
+  width: 40vw;
+  justify-content: center;
 }
 
 nav input {
-  display: inline-block;
-  align-self: center;
   height: 23px;
-  border-radius: 8px;
+  background: whitesmoke;
+  width: 250px;
+  height: 35px;
 }
 
-.links {
+nav button {
+  background: whitesmoke;
+  width: 60px;
+}
+
+#myLinks {
   display: flex;
   list-style: none;
+  top: 10px;
+}
+
+.icon {
+  display: none;
 }
 
 nav li a {
@@ -87,10 +101,21 @@ nav li a {
   color: white;
   margin: 0px 10px 0px 10px;
   text-decoration: none;
+  height: 48px;
+  padding-top: 15px;
+}
+
+nav li a:hover {
+  color: black;
+  background: #fff;
+  transition: .7s;
+  border-radius: 5px;
 }
 
 .carrinho {
-  margin-right: 3vw;
+  display: flex;
+  position: absolute;
+  right: 4vw;
 }
 
 nav .carrinho img {
@@ -109,53 +134,340 @@ nav .carrinho img {
   border-radius: 30px;
 }
 
+.chamadoprodutor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+.informativos img {
+  width: 400px;
+  height: 500px;
+  margin: 50px
+}
+
+.informativos {
+  display: flex;
+  margin: 10px;
+  color: green;
+}
+
+.informativos h2{
+  font-size: 25px;
+  text-align: center;
+}
+
+.informativos p{
+  font-size: 18px;
+  text-align: justify;
+  margin: 25px 75px 75px 100px;
+}
+
+.receita img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.receita {
+  color: green;
+  margin: 10px;
+}
+
+.receita h2{
+  font-size: 25px;
+  text-align: center;
+}
+
+.receita p{
+  font-size: 18px;
+  text-align: center;
+  margin: 25px 75px 75px 100px;
+}
+
+#frutas{
+  float:left
+}
+
+#receitas{
+  float:left
+}
+
+/*FOOTER-INICIO*/
+
 footer {
- display: flex;
- margin: 30px auto;
- width: 100%;
- color: rgb(26, 207, 117);
- background-color: #285D56;
- text-align: left;
- justify-content: center;
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  justify-content: center;
+ }
+
+.container-F{
+  
+  width:100%;
+  height: 180px;
+  margin: 0px ;
+  background-color: #285d56;
+ }
+
+
+ .container-F ul{
+  
+   color: black;
+   list-style: none;
+ } 
+div.li-a ul li h2,div.li-b ul li h2 {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+  letter-spacing: 1.3;
+  color: #B4C6A6;
+  margin-bottom: 15px
 }
 
-footer a p{
-  color: white;
+div.li-a ul li h3,div.li-b ul li h3 {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
+  font-weight:bold;
+  letter-spacing: 0px;
+  color: #98ad8c;
+  margin-bottom: 10px
+}
+ .container-F div.li-a {
+  
+padding: 5px;
+  float: left;
+margin-top: 10px;
+  margin-left: 30px;  
+ width: 30%;
+  
+  line-height: 1.3;
+  font-family:'Roboto', sans-serif;
+  letter-spacing: 5px;
+  } 
+
+  .container-F div.li-b {
+   
+    padding: 5px;
+    float: left;
+     width: 30%;
+    margin-top: 10px;
+    margin-left: 0px;   
+    line-height: 1.3;
+    font-family:'Roboto', sans-serif;
+    letter-spacing: 6px;
+    } 
+
+    .container-F div.li-c {
+      
+      padding: 5px;
+      float: left;
+      margin-top: 10px;   
+       
+       width: 30%;
+       margin-left:0px;
+            
+      } 
+      div.li-c ul li img{
+        float: left;
+        margin-top: 5px;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        
+      }
+      div.li-a ul li a,div.li-b ul li a{
+        text-decoration: none;
+        color: #b5c69b;
+      }
+      div.li-c ul li.input{
+        position: absolute;
+        margin-top: 130px;
+      }
+
+      div.li-c ul li.logo img{
+       position: absolute;
+        margin-top: -34px;
+        margin-right: 0px;
+        margin-left: 65px;
+        margin-bottom: 30px;
+        width: 200PX;
+        height: 200px;
+
+      }
+      div.li-c ul li.inscreva-se h2{
+       position: absolute;
+       margin-top: 70px;
+      }
+
+      div.li-c ul li h2 {color: #B4C6A6;}
+
+    
+
+      div.li-c ul li input{
+        position: absolute;
+        color: #B4C6A6; 
+        width: 170px;
+        height: 28px;
+        margin-top: -25px;
+        margin-bottom: 40px;
+        font-size: 18px;
+           }
+         
+  
+          div.clear{
+            clear: both;
+          }
+  
+    footer.footer2{
+    
+    width: 100%;
+    height: 26px;
+    margin: 0px;
+    margin-top:0px;
+   /* background-color:#285D56;*/
+   background-color:#467a73;
+
+    
+  }
+  footer.footer2 ul li {
+   
+  display: inline-block;
+    list-style: none;
+    color: #FFFFFF;
+   
+      }
+
+      footer.footer2 h3{
+        
+        font-family: monospace;
+        font-size: 16px;
+        margin-top: -20px;
+        margin-left:25px;
+        margin-bottom: 30px;
+        margin-right: 5px;
+          }
+          footer.footer2 ul li h3 a{
+            font-size: 20px;
+          }
+      
+    footer.footer2 h4{
+
+      font-family: monospace;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-left:5px;
+      margin-bottom:36px;
+        }
+
+        footer.footer2 img{
+          
+          width: 25px;
+          height:30px;
+          margin-top: 28px;
+          margin-left:0px;
+          margin-bottom:20px;
+          margin-right: 50px;
+         
+        }
+
+
+   /*FOOTER-FIM*/     
+
+/*COMO-COMPRAR*/
+
+body{
+  height: 800px;
+}
+section.article{
+
+width: 100%;
+height: 500px;
+
 }
 
-footer img{
-  margin: 20px 0px 0px 0px;
-  border-radius: 10px;
-  width: 8vw;
+section.article h2{
+
+  font-family:  'Roboto', sans-serif;
+  font-size: 40px;
+  text-align:center;
+  margin-top: 26px;
+  letter-spacing: 5px;
+  box-shadow: #285D56;
+    
+}
+section.article p{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  text-align:left;
+  text-indent: 25px;
+  margin-top: 15px;
+  line-height:50px;
+  padding: 16px;
+    
+}
+section.article a{
+  text-decoration: none;
 }
 
-.institucional, .serviços, .oportunidades {
-  background-color: #285D56;
-  margin: 0px 20px 0px 0px;
-  align-self: center;
-  display: inline-block ;
+
+/*COMO-COMPRAR-FIM*/
+
+/*SEJA-UM-FORNECEDOR-INICIO*/
+
+
+body{
+
+  height: 800px;
 }
 
-.newslatter {
-  position: absolute;
-  background-color: #285D56;
-  align-self: center;
-  margin-bottom: 25px;
-  right: 3vw;
+section.article  {
+     
+  background: url('../img/sejaUmFornecedor2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+   margin-top: 0px;
+
+
 }
 
-.social1 {
-  display: inline-flex;
-  position: absolute;
-  right: 12rem;
-  top: 1.5rem;
+section.article div.fornecedor h2{
+
+  font-family:  'Roboto', sans-serif;
+  font-size: 40px;
+  text-align:center;
+  margin-top: 0px;
+  letter-spacing: 15px;
+  box-shadow: #285D56;
+    
+}
+section.article p{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+  text-align:left;
+  text-indent: 25px;
+  margin-top: 15px;
+  line-height:50px;
+  padding: 16px;
+    
+}
+section.article a{
+  text-decoration: none;
 }
 
-.social1 img{
-  align-items: center;
-  width: 16px;
-}
+
+
+
+/*--RESPONSIVIDADE*/
 
 @media screen and (max-width: 810px) {
   .links {
@@ -168,7 +480,7 @@ footer img{
     align-items: center;
     flex-direction: column;
 }
-  footer .newslatter {
+  footer .newsletter {
     position: relative;
     align-self: center;
     padding-left: 20vw;
@@ -179,4 +491,28 @@ footer img{
   footer .serviços {
     padding-right: 40px;
   }
+
 }
+
+#frutas{
+  float:left
+}
+ 
+/*.menu {
+/*  border-radius: 10px;
+/*  background: transparent;
+/*  border: 1px solid #66ffa6;
+/*  height: 50px;
+/*  width: 50px;
+/*  padding: 10px;
+/*}
+/*
+/*.menu a li {
+/*  display: block;
+/*  position: relative;
+/*  border-radius: 5px;
+/*  background-color: #66ffa6;
+/*  height: 4px;
+/*  width: 100%;
+/*  margin-bottom: 7px;
+/*}
