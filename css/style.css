@@ -606,6 +606,29 @@ section.conheca-produtores{
   /*CONHEÇA OS PRODUTORES FIM*/
 
 
+  /*TRABALHE CONOSCO INÍCIO*/
+
+section.imagem{
+  width: 100%;
+  height:1000px;
+  background:url(../img/trabalhe-conosco.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.imagem ul li img{
+  width: 750px;
+  height:90px;
+  margin-top: 470px;
+  margin-left: 300px;
+  opacity: 0.05;
+
+
+}
+
+
+
+  /*TRABALHE CONOSCO FIM*/
+
 /*--RESPONSIVIDADE*/
 
 @media screen and (max-width: 815px) {
