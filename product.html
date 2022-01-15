@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Página interna do produto</title>
+</head>
+
+<body>
+    <header>
+        <a href="" target="_blank">
+            <p>Seja assinante</p>
+        </a>
+        <a href="" target="_blank">
+            <p>Login</p>
+        </a>
+        <div class="social">
+            <a href="" target="_blank"><img src="./img/Facebook.png" alt="Facebook"></a>
+            <a href="" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+            <a href="" target="_blank"><img src="./img/twitter.png" alt="Twitter"></a>
+        </div>
+    </header>
+    <nav>
+        <a href="" target="_blank"><img src="./img/logo.png" alt="Logo"></a>
+        <div class="put">
+            <input type="search" class="nav-search-input" name="as_word" placeholder="Buscar produtos" maxlength="120"
+                autofocus="" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="2"
+                value="" aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="list" id="cb1-edit"
+                aria-expanded="false" role="combobox">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="menu">
+            <div id="myLinks">
+                <li><a href="" target="_blank">
+                        Promoções
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Frutas
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Legumes
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Verduras
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Mercearia
+                    </a></li>
+                <li><a href="" target="_blank">
+                        Entrega aí?
+                    </a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="carrinho">
+            <a href="" target="_blank"><img src="./img/carrinho.png" alt="Carrinho"></a>
+        </div>
+    </nav>
+    <section class="frutas">
+        <h1>Frutas</h1>
+        <hr>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_687568-MLB43740376981_102020-O.webp" alt="Maçã Fuji">
+        <hr />
+        <div class="item-info">
+            <h2>Maçã Fuji</h2>
+            <h3>R$ 2,90</h3>
+            <h4>em até 6x sem juros</h4>
+            <p>Peso da unidade: 250g</p>
+            <p>Detalhes sobre os benefícios da fruta:<br>
+                Melhora a função cerebral. <br>
+                É boa para o coração.<br>
+                Diminui o risco de diabetes.<br>
+                Afasta a prisão de ventre.<br>
+                Previne o câncer.<br>
+                Combate a asma.<br>
+                Previne cáries.<br>
+                Fortalece o sistema imunológico.</p>
+        </div>
+    </section>
+    <section class="frete">
+        <img src="https://i.pinimg.com/236x/5d/26/a1/5d26a173f443cbd190e34481438d474b.jpg"
+            alt="Quanto mais você leva, mais você economiza!">
+        <p>Quanto mais você leva, mais você economiza!</p>
+        <h5>Ganhe 10% de desconto levando mais de 15 produtos!</h5>
+        <p><a href="" target="_blank">Mais informações</a></p>
+        <label for="cep-input">Calcular frete e prazo de entrega</label>
+        <input type="text" placeholder="Digite seu CEP" id="cep-input">
+        <button type="submit" id="frete">Calcular</button>
+        <label for="quantidade">Estoque disponível</label>
+        <select name="Quantidade" id="quantidade">
+            <option value="" disabled selected></option>
+            <option value="2">2 unidades</option>
+            <option value="4">4 unidades</option>
+            <option value="6">6 unidades</option>
+            <option value="8">8 unidades</option>
+            <option value="10">10 unidades</option>
+            <select name="Mais de 10 unidades" id="maisde10">
+            </select>
+            <p>Você pode comprar até 5kg</p>
+            <button type="submit" id="adicionar">Adicionar ao carrinho</button>
+    </section>
+    <section class="outros-produtos">
+        <h4>Você também pode se interessar por:</h4>
+        <div class="produto">
+            <a href="" target="_blank"><img src="./imgs/Manga-Palmer-Organica-900g---Raizs.jpg" alt="manga"> </a>
+            <p>Manga Palmer Organica<br>900g</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="produto">
+            <a href="" target="_blank"><img src="./imgs/Abobrinha-Italiana-Organica--600g---800g----Raizs.jpg"
+                    alt="abobrinha"> </a>
+            <p>Abobrinha Italiana Organica<br>600g-800g</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="produto">
+            <a href="" target="_blank"><img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="banana">
+            </a>
+            <p>Banana Prata Organica<br>600g-800g</p>
+            <button>Adicionar</button>
+        </div>
+    </section>
+    <section class="vendedor">
+        <h3>Detalhes do vendedor</h3>
+        <img src="img/supermercado.png" alt="Logo do Supermercado">
+        <p>Supermercados CRF</p>
+        <p>Nota: ****</p>
+        <iframe id="localizacao"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.1481026848696!2d-43.69546527078961!3d-22.55693616056568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9949358b49c421%3A0x2c0347dd4579d56d!2sR.%20Pref.%20Jose%20Maria%20Lima%2C%2050%20-%20Pacheco%2C%20Eng.%20Paulo%20de%20Frontin%20-%20RJ%2C%2026650-000!5e0!3m2!1spt-BR!2sbr!4v1642024502584!5m2!1spt-BR!2sbr"
+            width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+</body>
+
+</html>
