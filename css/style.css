@@ -388,7 +388,7 @@ margin-top: 10px;
         
         /*TERMOS E CONDIÇÕES INICIO*/
        
-        body{
+        .primeiro{
           background-image:url(../img/fundoBranco.png);
         }
          h1{
@@ -418,7 +418,7 @@ margin-top: 10px;
 
         /*POLÍTICAS DE PRIVACIDADE INÍCIO*/
 
-        body{
+        .primeiro{
           background-image:url(../img/fundoBranco.png);
         }
 
