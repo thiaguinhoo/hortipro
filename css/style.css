@@ -203,7 +203,6 @@ nav li a:hover {
 }
 /*-------------New Footer Section-------------- */
 /*-------------New Footer Section-------------- */
-
 footer {
   display: flex;
   margin: 0px;
@@ -388,8 +387,7 @@ margin-top: 10px;
           margin-bottom:20px;
           margin-right: 50px;
          
-        }
-        
+        }        
         /*TERMOS E CONDIÇÕES INICIO*/
        
         div.primeiro{
