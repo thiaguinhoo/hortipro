@@ -202,3 +202,75 @@ h3 {
   transition: 0.5s;
   color: #fff;
 }
+
+@media screen and (max-width: 992px) {
+  .menu {
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 34vh;
+    opacity: 0.9;
+    width: 50vw;
+}
+
+#myLinks{
+  display: none;
+}
+
+.menu a {
+  color:white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.menu a.icon {
+  background: #285D56;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: black;
+  transition: .4s;
+}
+}
+
+@media screen and (max-width: 810px) {
+  .links {
+      flex-direction: column;
+}
+}
+
+@media screen and (max-width: 815px) {
+  footer {
+    align-items: center;
+    flex-direction: column;
+}
+
+  footer .newsletter {
+    position: relative;
+    align-self: center;
+    padding-left: 20vw;
+}
+  footer .institucional, .serviços, .oportunidades {
+    align-self: center
+  }
+  footer .serviços {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .carrinho img{
+    top: 55px;
+    right: 5vw
+  }
+
+  .social {
+    right: 4vw;
+  }
+}
