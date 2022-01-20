@@ -7,33 +7,29 @@
 body {
   max-width: 1920px;
   width: 100%;
-  background-color: #B4C6A6;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(45deg, #285D56, #C8D25C);
 }
 
-header{
+header {
   display: flex;
   background-color: #C8D25C;
   height: 20px;
   width: 100%;
-  top: 0px;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding: 0 3vw 0 3vw;
 }
+
 
 header a {
-  text-decoration: none;
-}
-
-header a p{
+  font-weight: bold;
+  font-size: 16px;
   color: white;
-  margin-right: 60px;
+  z-index: 100;
 }
 
 .social {
   position: absolute;
-  right: 3vw;
+  right: 53px;
 }
 
 .social img{
@@ -52,8 +48,6 @@ nav {
   display: flex;
   align-items: center;
   z-index: 10;
-  padding-left: 3vw;
-  padding-right: 2vw;
 }
 
 nav li {
@@ -62,6 +56,7 @@ nav li {
   color: #FFFFFF;
   text-align: justify;
   display: flex;
+  justify-content: space-between;
 }
 
 nav img{
@@ -79,18 +74,37 @@ nav input {
   height: 23px;
   background: whitesmoke;
   width: 250px;
-  height: 35px;
+  height: 30px;
+  border: 1px solid #e6ecf0;
+  border-radius: 16px;
+  background: whitesmoke url('../img/search.svg') no-repeat 96% center;
+  font-size: 12px;
 }
 
 nav button {
   background: whitesmoke;
-  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  border:0;
+  border-radius: 16px;
+  margin-left: 5px;
+}
+
+nav button:active {
+  background: rgba(245, 245, 245, 0.795);
+  transition: 3ms;
+  box-shadow: rgb(255, 255, 255) 0px 0px 1px 1px;
 }
 
 #myLinks {
   display: flex;
   list-style: none;
-  top: 10px;
 }
 
 .icon {
@@ -754,13 +768,21 @@ background-image:url(../img/central-de-ajuda.png);
 
 /*--RESPONSIVIDADE*/
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1010px) {
   .menu {
+    display: flex;
     overflow: hidden;
-    background-color: #333;
-    margin-top: 34vh;
+    background: #333;
+    margin-top: 275px;
     opacity: 0.9;
-    width: 50vw;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu li a {
+  display: flex;
+  width: 100%;
 }
 
 #myLinks{
@@ -799,11 +821,11 @@ background-image:url(../img/central-de-ajuda.png);
 @media screen and (max-width: 1290px) {
   .carrinho img{
     top: 55px;
-    right: 5vw
+    right: 1vw;
   }
 
   .social {
-    right: 4vw;
+    right: 1vw;
   }
 }
 
