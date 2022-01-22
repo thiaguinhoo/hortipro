@@ -87,6 +87,7 @@ header {
 
 header a {
   list-style: none;
+  text-decoration-line: none;
   color: white;
 }
 
