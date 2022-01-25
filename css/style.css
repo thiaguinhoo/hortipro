@@ -152,31 +152,31 @@ nav input {
   width: 25vw;
   height: 30px;
   border: 1px solid #e6ecf0;
-  border-radius: 16px;
-  background: whitesmoke url('../img/search.svg') no-repeat 96% center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   font-size: 12px;
   padding-left: 13px;
   padding-right: 25px;
 }
 
 nav button {
-  background: whitesmoke;
+  background: whitesmoke url('../img/search.svg') no-repeat 40% center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: 20px;
   height: 30px;
   font-size: 16px;
   color: #333;
   border:0;
-  border-radius: 16px;
-  margin-left: 5px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 nav button:active {
-  background: rgba(245, 245, 245, 0.795);
   transition: 3ms;
   box-shadow: rgb(255, 255, 255) 0px 0px 1px 1px;
+  border-color: white;
 }
 
 #myLinks {
@@ -883,6 +883,13 @@ background-image:url(../img/central-de-ajuda.png);
 
 #myLinks{
   display: none;
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  right: 0px;
+  list-style: none;
+  justify-content: center;
+  background: black;
 }
 
 .menu a {
