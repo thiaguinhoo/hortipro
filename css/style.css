@@ -1,70 +1,3 @@
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-       transform: translateX(-5px);
-    } 
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -74,34 +7,33 @@
 body {
   max-width: 1920px;
   width: 100%;
+  background-color: #B4C6A6;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(45deg, #285D56, #C8D25C);
 }
 
-header {
+header{
   display: flex;
   background-color: #C8D25C;
   height: 20px;
   width: 100%;
+  top: 0px;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 
 header a {
-  list-style: none;
-  text-decoration-line: none;
+  text-decoration: none;
+}
+
+header a p{
   color: white;
-}
-
-header #atalhos:first-child {
-  padding-left: 4vw;
-}
-
-header #atalhos a{
-  padding-right: 40px;
+  margin-right: 60px;
 }
 
 .social {
   position: absolute;
-  right: 53px;
+  right: 3vw;
 }
 
 .social img{
@@ -120,20 +52,16 @@ nav {
   display: flex;
   align-items: center;
   z-index: 10;
-  padding-left: 4vw;
-}
-
-nav li:first-child {
-  margin-left: -5px;
+  padding-left: 3vw;
+  padding-right: 2vw;
 }
 
 nav li {
+  margin: 5px 7px 5px 0px;
   font-size: 15px;
   color: #FFFFFF;
   text-align: justify;
   display: flex;
-  justify-content: space-around;
-  margin: 0 5px 0 5px;
 }
 
 nav img{
@@ -148,40 +76,21 @@ nav img{
 }
 
 nav input {
+  height: 23px;
   background: whitesmoke;
-  width: 25vw;
-  height: 30px;
-  border: 1px solid #e6ecf0;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  font-size: 12px;
-  padding-left: 13px;
-  padding-right: 25px;
+  width: 250px;
+  height: 35px;
 }
 
 nav button {
-  background: whitesmoke url('../img/search.svg') no-repeat 40% center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 30px;
-  font-size: 16px;
-  color: #333;
-  border:0;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-nav button:active {
-  transition: 3ms;
-  box-shadow: rgb(255, 255, 255) 0px 0px 1px 1px;
-  border-color: white;
+  background: whitesmoke;
+  width: 60px;
 }
 
 #myLinks {
   display: flex;
   list-style: none;
+  top: 10px;
 }
 
 .icon {
@@ -193,7 +102,6 @@ nav li a {
   color: white;
   width: 85px;
   justify-content: center;
-  text-align: center;
   text-decoration: none;
   height: 48px;
   padding-top: 15px;
@@ -204,10 +112,6 @@ nav li a:hover {
   background: #fff;
   transition: .7s;
   border-radius: 5px;
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
 }
 
 .carrinho img {
@@ -218,23 +122,14 @@ nav li a:hover {
   right: 65px;
 }
 
-.carrinho img:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
 .carrossel {
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin: 80px 0 ;
 }
 
 .carrossel img {
   display: table-row;
   margin: 0 auto;
-  width: 85vw;
-  height: 30vw;
+  width: 90vw;
   border-radius: 30px;
 }
 
@@ -242,42 +137,38 @@ nav li a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 85vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 80%;
 }
 
 .informativos {
   display: flex;
+  margin: 10px;
   color: #FFFFFF;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  width: 100%;
 }
 
 .informativos img {
   height: 60vh;
-  margin-left: 2.5vw;
-}
-
-#frutas-uwd {
-  display: none;
+  margin-left: 4vw;
 }
 
 .info-text {
-  margin-top: -20px;
+  width: 45vw;
+  right: 2vw;
   margin-bottom: 10px;
-  margin-left: 42vw;
-  margin-right: 7vw;
+  margin-left: 50vw;
+  text-align: justify;
 }
 
 .informativos h2{
+  margin-top: -3.5vh;
   font-size: 25px;
   text-align: center;
 }
 
 .informativos p{
   font-size: 18px;
-  text-align: justify;
+  right: 3vw;
 }
 
 .receita img {
@@ -337,7 +228,6 @@ nav li a:hover {
    color: black;
    list-style: none;
  } 
-
 div.li-a ul li h2,div.li-b ul li h2 {
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -361,11 +251,11 @@ div.li-a ul li h3,div.li-b ul li h3 {
 }
  .container-F div.li-a {
   
-  padding: 5px;
+padding: 5px;
   float: left;
-  margin-top: 10px;
+margin-top: 10px;
   margin-left: 30px;  
-  width: 30%;
+ width: 30%;
   
   line-height: 1.3;
   font-family:'Roboto', sans-serif;
@@ -552,7 +442,7 @@ div.li-a ul li h3,div.li-b ul li h3 {
                  margin-right: 110px;
                  margin-left: 120px;
                  margin-bottom: 150px;
-                 width: 149PX;
+                 width: 150PX;
                  height: 150px;
                } 
                div.li-c ul li input{margin-top: 12px;}
@@ -573,7 +463,7 @@ div.li-a ul li h3,div.li-b ul li h3 {
 
                 div.li-c ul li.logo img{
                   
-                   margin-top: -60px;
+                   margin-top: -59px;
                    margin-right: 110px;
                    margin-left: 0px;
                    margin-bottom: 50px;
@@ -1215,32 +1105,17 @@ background-image:url(../img/central-de-ajuda.png);
 
 /*--RESPONSIVIDADE*/
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 992px) {
   .menu {
-    display: flex;
     overflow: hidden;
-    background: #333;
-    margin-top: 240px;
+    background-color: #333;
+    margin-top: 34vh;
     opacity: 0.9;
-    width: 40%;
-    justify-content: center;
-    text-align: center;
-}
-
-.menu li a {
-  display: flex;
-  width: 100%;
+    width: 50vw;
 }
 
 #myLinks{
   display: none;
-  position: absolute;
-  top: 48px;
-  left: 0px;
-  right: 0px;
-  list-style: none;
-  justify-content: center;
-  background: black;
 }
 
 .menu a {
@@ -1264,91 +1139,61 @@ background-image:url(../img/central-de-ajuda.png);
   color: black;
   transition: .4s;
 }
-
-.put {
-  display: flex;
-  justify-content: center;
-  margin-left: 16vw;
-}
 }
 
 @media screen and (max-width: 810px) {
   .links {
       flex-direction: column;
 }
-nav button {
-  font-size: 13px;
-}
 }
 
-@media screen and (max-width: 1345px) {
+@media screen and (max-width: 815px) {
+  footer {
+    align-items: center;
+    flex-direction: column;
+}
+
+  footer .newsletter {
+    position: relative;
+    align-self: center;
+    padding-left: 20vw;
+}
+  footer .institucional, .serviços, .oportunidades {
+    align-self: center
+  }
+  footer .serviços {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
   .carrinho img{
     top: 55px;
-    right: 1vw;
+    right: 5vw
   }
 
   .social {
-    right: 1vw;
+    right: 4vw;
   }
 }
 
-@media screen and (max-width: 480px) {
-  nav input {
-    width: 40vw;
-    margin-left: -15px;
-  }
 
-  nav button {
-    margin-right: 50px;
-  }
+/*.menu {
+/*  border-radius: 10px;
+/*  background: transparent;
+/*  border: 1px solid #66ffa6;
+/*  height: 50px;
+/*  width: 50px;
+/*  padding: 10px;
+/*}
+/*
+/*.menu a li {
+/*  display: block;
+/*  position: relative;
+/*  border-radius: 5px;
+/*  background-color: #66ffa6;
+/*  height: 4px;
+/*  width: 100%;
+/*  margin-bottom: 7px;
+/*}
 
-  .menu {
-    display: flex;
-    background: #333;
-    margin-top: 240px;
-    opacity: 0.9;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-}
-
-nav button {
-  font-size: 10px;
-}
-}
-
-@media screen and (max-width: 900px) {
-  .info-img {
-    display: none;
-  }
-
-  #frutas-uwd {
-    display: block;
-    width: 85vw;
-    height: 40vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .informativos {
-    display: block;
-    margin: 0;
-    text-align: center;
-    width: 100vw;
-  }
-
-  .info-text {
-    margin-top: 40px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-
-  .info-text p{
-    width: 80vw;
-    margin-left: 6vw;
-  }
-
-  .info-text h2{
-
-  }
-}
