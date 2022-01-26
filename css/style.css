@@ -179,8 +179,9 @@ nav li a:hover {
 }
 
 .receita {
-  color: #FFFFFF;
   margin: 10px;
+  font-family: 'Times New Roman', Times, serif;
+    color: #eca1ba;
 }
 
 .receita h2{
