@@ -53,6 +53,7 @@ nav {
   align-items: center;
   z-index: 10;
   padding-left: 3vw;
+  padding-right: 2vw;
 }
 
 nav li {
@@ -113,16 +114,12 @@ nav li a:hover {
   border-radius: 5px;
 }
 
-.carrinho {
-  display: flex;
-  position: absolute;
-  right: 4vw;
-  top: 9px
-}
-
-nav .carrinho img {
+.carrinho img {
   width: 30px;
   height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 65px;
 }
 
 .carrossel {
@@ -132,7 +129,7 @@ nav .carrinho img {
 .carrossel img {
   display: table-row;
   margin: 0 auto;
-  width: 70%;
+  width: 90vw;
   border-radius: 30px;
 }
 
@@ -143,32 +140,39 @@ nav .carrinho img {
   width: 80%;
 }
 
-
-.informativos img {
-  width: 400px;
-  height: 500px;
-  margin: 50px
-}
-
 .informativos {
   display: flex;
   margin: 10px;
   color: #FFFFFF;
+  width: 100%;
+}
+
+.informativos img {
+  height: 60vh;
+  margin-left: 4vw;
+}
+
+.info-text {
+  width: 45vw;
+  right: 2vw;
+  margin-bottom: 10px;
+  margin-left: 50vw;
+  text-align: justify;
 }
 
 .informativos h2{
+  margin-top: -3.5vh;
   font-size: 25px;
   text-align: center;
 }
 
 .informativos p{
   font-size: 18px;
-  text-align: justify;
-  margin: 25px 75px 75px 100px;
+  right: 3vw;
 }
 
 .receita img {
-  width: 30%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -438,7 +442,7 @@ margin-top: 10px;
                  margin-right: 110px;
                  margin-left: 120px;
                  margin-bottom: 150px;
-                 width: 150PX;
+                 width: 149PX;
                  height: 150px;
                } 
                div.li-c ul li input{margin-top: 12px;}
@@ -459,7 +463,7 @@ margin-top: 10px;
 
                 div.li-c ul li.logo img{
                   
-                   margin-top: -59px;
+                   margin-top: -60px;
                    margin-right: 110px;
                    margin-left: 0px;
                    margin-bottom: 50px;
@@ -747,7 +751,7 @@ margin-top: 10px;
         
         /*TERMOS E CONDIÇÕES INICIO*/
        
-        .primeiro{
+        div.primeiro{
           background-image:url(../img/fundoBranco.png);
         }
          h1{
@@ -1101,13 +1105,7 @@ background-image:url(../img/central-de-ajuda.png);
 
 /*--RESPONSIVIDADE*/
 
-@media screen and (max-width: 815px) {
-  .carrinho{
-    margin-top: 90px;
-    margin-right: 1vh;
-    right: 0vw;
-  }
-
+@media screen and (max-width: 992px) {
   .menu {
     overflow: hidden;
     background-color: #333;
@@ -1115,7 +1113,6 @@ background-image:url(../img/central-de-ajuda.png);
     opacity: 0.9;
     width: 50vw;
 }
-
 
 #myLinks{
   display: none;
@@ -1144,10 +1141,6 @@ background-image:url(../img/central-de-ajuda.png);
 }
 }
 
-
-  
-  
-
 @media screen and (max-width: 810px) {
   .links {
       flex-direction: column;
@@ -1171,35 +1164,20 @@ background-image:url(../img/central-de-ajuda.png);
   footer .serviços {
     padding-right: 40px;
   }
-
 }
 
-#frutas{
-  float:left
+@media screen and (max-width: 1290px) {
+  .carrinho img{
+    top: 55px;
+    right: 5vw
+  }
+
+  .social {
+    right: 4vw;
+  }
 }
 
 
-@media screen and (max-width: 575px) {
-  
-};
- 
-@media screen and (min-width: 576px) {
- 
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
-}
-
-  
 /*.menu {
 /*  border-radius: 10px;
 /*  background: transparent;
