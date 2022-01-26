@@ -13,12 +13,10 @@
 
 <body>
     <header>
-        <a href="" target="_blank">
-            <p>Seja assinante</p>
-        </a>
-        <a href="" target="_blank">
-            <p>Login</p>
-        </a>
+        <div id="atalhos">
+            <a href="" target="_blank">Seja assinante</a>
+            <a href="" target="_blank">Login</a>
+        </div>
         <div class="social">
             <a href="" target="_blank"><img src="./img/Facebook.png" alt="Facebook"></a>
             <a href="" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
@@ -29,11 +27,11 @@
     <nav>
         <a href="" target="_blank"><img src="./img/logo.png" alt="Logo"></a>
         <div class="put">
-            <input type="text" class="nav-search-input" name="as_word" placeholder="Buscar produtos" maxlength="120"
-                autofocus="" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="2"
-                value="" aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="list" id="cb1-edit"
+            <input type="text" class="nav-put" name="as_word" placeholder="Buscar" maxlength="120" autofocus=""
+                autocapitalize="off" autocorrect="on" spellcheck="false" autocomplete="off" tabindex="2" value=""
+                aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="on" id="search"
                 aria-expanded="false" role="combobox">
-            <button type="submit">Buscar</button>
+            <button type="submit" target="search"></button>
         </div>
         <div class="menu">
             <div id="myLinks">
@@ -82,6 +80,8 @@
         <article>
             <a href="" target="_blank" class="info-img"><img src="./img/imagens-de-frutas-2.jpg"
                     alt="As melhores frutas para pequenique" id="frutas"></a>
+            <a href="" target="_blank"><img src="./img/frutas-uwd.jpg" alt="As melhores frutas para pequenique"
+                    id="frutas-uwd"></a>
             <br />
             <div class="info-text">
                 <h2>Quais as melhores frutas para fazer um piquenique? </h2>
@@ -144,16 +144,16 @@
 <!--FOOTER-->
 
 <footer class="footer1">
-   
-       
+
+
     <div class="container-F">
-         
-                 
-          
-          <div class="li-a">  
+
+
+
+        <div class="li-a">
             <ul>
                 <li>
-                    <h2>INSTITUCIONAL</h2> 
+                    <h2>INSTITUCIONAL</h2>
                     <h3> <a href="./about-us.html" target="_blank">Sobre Nós</a> </h3>
                     <h3><a href="./termos-e-condicoes.md" target="_blank">Termos e Condições</a></h3>
                     <h3><a href="./como-comprar.html" target="_blank">Como Comprar</a></h3>
@@ -163,51 +163,65 @@
         </div>
 
         <div class="li-b">
-             <ul>
+            <ul>
                 <li>
                     <h2>OPORTUNIDADES</h2>
                     <h3> <a href="./sejaUmFornecedor.html" target="_blank">Seja um Fornecedor</a> </h3>
                     <h3><a href="./conhecaOsProdutores.html" target="_blank">Conheça os Produtores</a></h3>
                     <h3><a href="./trabalheConosco.html" target="_blank">Trabalhe Conosco</a></h3>
                     <h3><a href="./central-de-ajuda.html" target="_blank">Central de Ajuda</a></h3>
-                    
+
                 </li>
             </ul>
-        </div> 
+        </div>
 
-    <div class="li-c">
+        <div class="li-c">
             <ul>
-               <li><img src="./img/instagram.png"/> </li>
-               <li><img src="./img/Facebook.png"/></li>
-               
+                <li><img src="./img/instagram.png" /> </li>
+                <li><img src="./img/Facebook.png" /></li>
+
             </ul>
 
             <ul>
-                <li class ="logo"><img src="./img/logoHortiproVazada.png"/></li>
-                <li class="inscreva-se"> <h2> Inscreva-se </h2> </li>
+                <li class="logo"><img src="./img/logoHortiproVazada.png" /></li>
+                <li class="inscreva-se">
+                    <h2> Inscreva-se </h2>
+                </li>
             </ul>
-            <ul>  
+            <ul>
                 <li class=input> <input type="email" value="Digite seu e-mail"> </li>
             </ul>
-    </div> <!--div class container-->
-    <div class="clear"></div>
+        </div>
+        <!--div class container-->
+        <div class="clear"></div>
 
-</div>
+    </div>
 
-</footer> <!--footer1-->
+</footer>
+<!--footer1-->
 
-        
+
 
 <footer class="footer2">
     <div class="footer-container">
         <ul>
-            <li><h3> Termos de Uso</h3></li>
-            <li><h3> <a href="./home.html">TOPO </a></h3></li>
-            <li><h3><i class="icofont-arrow-up"></i></h3> </li>
-            <li><h4> Grupo Hortipro S.A / CNPJ 05.658.066/0001-85</h4></li>
+            <li>
+                <h3> Termos de Uso</h3>
+            </li>
+            <li>
+                <h3> <a href="./home.html">TOPO </a></h3>
+            </li>
+            <li>
+                <h3><i class="icofont-arrow-up"></i></h3>
+            </li>
+            <li>
+                <h4> Grupo Hortipro S.A / CNPJ 05.658.066/0001-85</h4>
+            </li>
 
         </ul>
     </div>
-</footer> <!--footer2-->
-    <script src="mobile-navbar.js"></script>
+</footer>
+<!--footer2-->
+<script src="mobile-navbar.js"></script>
+
 </html>
