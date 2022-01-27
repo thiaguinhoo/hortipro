@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #10690df5;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}​
+
+input:focus, label:focus{
+    outline: none;
+}
+
+input {
+    width: 100%;
+}
+
+.full-box {
+    width: 100%;
+}
+
+a {
+    color:rgb(245, 150, 9);
+}
+
+body {
+    padding-top: 5vh;
+    background-image: url('../img/plantacao-de-laranja\ \(2\).jpg');
+    background-size: cover;
+    background-position-y: 0px;
+}
+
+#main-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.0rem;
+}
+
