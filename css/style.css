@@ -79,13 +79,43 @@ nav img{
 nav input {
   height: 23px;
   background: whitesmoke;
+<<<<<<< HEAD
   width: 250px;
   height: 35px;
+=======
+  width: 25vw;
+  height: 30px;
+  border: 1px solid #e6ecf0;
+  border-radius: 16px;
+  background: whitesmoke url('../img/search.svg') no-repeat 96% center;
+  font-size: 12px;
+  padding-left: 13px;
+  padding-right: 25px;
+>>>>>>> parent of 69b1072 (Alteração de posicionamento do menu hamburguer. Alterados os estilos do input e button da div put.)
 }
 
 nav button {
   background: whitesmoke;
+<<<<<<< HEAD
   width: 60px;
+=======
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  color: #333;
+  border:0;
+  border-radius: 16px;
+  margin-left: 5px;
+}
+
+nav button:active {
+  background: rgba(245, 245, 245, 0.795);
+  transition: 3ms;
+  box-shadow: rgb(255, 255, 255) 0px 0px 1px 1px;
+>>>>>>> parent of 69b1072 (Alteração de posicionamento do menu hamburguer. Alterados os estilos do input e button da div put.)
 }
 
 #myLinks {
