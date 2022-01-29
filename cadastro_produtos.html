@@ -1,83 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Home Page</title>
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="css/cadastroprodutos.css">
 </head>
-
 <body>
-    <header>
-        <a href="" target="_blank">
-            <p>Olá, Produtor</p>
-        </a>
-    </header>
-    <nav>
-        <a href="" target="_blank"><img src="./img/logo.png" alt="Logo"></a>
-        
-    </nav>
-    <section>
-        <br/>
-        <h3>Cadastro de Produtos</h3>
-        <br/>
-        <img src="./img/fotoproduto.png" alt="foto do produto" width=120 height="120">
-    </section>
-   
-   
-    <footer>
-        <a href="" target="_blank"><img src="./img/logo.png" alt="Logo"></a>
-        <div class="institucional">
-            <h3>Institucional</h3>
-            <a href="./about-us.html" target="_blank">
-                <p>Sobre nós</p>
-            </a>
-            <a href="./politicas-de-privacidade.md" target="_blank">
-                <p>Políticas de privacidade</p>
-            </a>
-            <a href="./termos-e-condicoes.md" target="_blank">
-                <p>Termos e condições</p>
-            </a>
+    <div id= "main-container">
+        <div id= "logo">
+            <center>
+                <a href="" target="_blank"><img src="./img/logohtp.png" width="25%" alt="logo"></a>
+            </center> 
         </div>
-        <div class="serviços">
-            <h3>Serviços</h3>
-            <a href="" target="_blank">
-                <p>Central de ajuda</p>
-            </a>
-            <a href="" target="_blank">
-                <p>Como comprar</p>
-            </a>
-            <a href="" target="_blank">
-                <p>Fale conosco</p>
-            </a>
-        </div>
-        <div class="oportunidades">
-            <h3>Oportunidades</h3>
-            <a href="" target="_blank">
-                <p>Conheça os produtores</p>
-            </a>
-            <a href="" target="_blank">
-                <p>Seja um fornecedor</p>
-            </a>
-            <a href="" target="_blank">
-                <p>Trabalhe conosco</p>
-            </a>
-        </div>
-        <div class="newslatter">
-            <h4>Receba notícias</h4>
-            <input type="email" value="digite seu e-mail">
-            <input type="button" value="Inscreva-se">
-            <div class="social1">
-                <a href="" target="_blank"><img src="./img/Facebook.png" alt="Facebook"></a>
-                <a href="" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
-                <a href="" target="_blank"><img src="./img/twitter.png" alt="Twitter"></a>
+        <h1>Cadastre Seus Produtos</h1>
+        <form id="register-form">
+            <a href="" target="_blank"><img src="./img/fotoproduto.png" alt="Fotoproduto"></a>
+            <div class="full-box">
+                <label for="fotodoproduto">Foto do Produto</label>
+                <input type="text" name="fotodoproduto" id="fotodoproduto" placeholder="Coloque a foto do seu produto">
             </div>
-        </div>
-    </footer>
-    <script src="mobile-navbar.js"></script>
 
+            <div class="full-box">
+                <label for="nomedoproduto">Nome do Produto</label>
+                <input type="text" name="nomedoproduto" id="nomedoproduto" placeholder="Digite o nome do seu produto:">
+            </div>
+
+            <div class="full-box">
+                <label for="quantidadedoproduto">Quantidade do Produto</label>
+                <input type="text" name="quantidadedoproduto" id="quantidadedoproduto" placeholder="Digite a quantidade disponível do seu produto:">
+            </div>
+
+            <div class="full-box">
+                <label for="unidadedoproduto">Unidade de medida do Produto</label>
+                <input type="text" name="unidadedoproduto" id="unidadedoproduto" placeholder="Digite a unidade de medida do seu produto:">
+            </div>
+
+            <div class="full-box">
+                <label for="valordoproduto">Valor do Produto</label>
+                <input type="text" name="valordoproduto" id="valordoproduto" placeholder="Digite o valor do seu produto em sua quantidade mínima:">
+            </div>
+
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">Termos de uso</a></label>
+            </div>
+            </br>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registar">
+            </div>
+
+        </form>
+
+    </div>
+    <p class="error-validation template"></p>
+    <script src="cadastroprodutos.js"></script>
 </body>
-
 </html>
