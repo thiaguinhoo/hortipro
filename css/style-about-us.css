@@ -126,27 +126,42 @@ nav .carrinho img {
   height: 30px;
 }
 
+#main-container {
+  display: flex;
+  width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding:25px;
+    background: #dddddd;
+
+  
+  
+}
+
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
-	margin: 5rem 0 5rem;
+	
 	clear: left;
 }
 
-.sobrenos {
+.sobre-nos {
 
+  display: inline-block;
 	padding: 3em 0;
-	background: #dddddd;
-  justify-content: center;
+	
+  justify-content: space-around;
   margin-left: 50px; 
 }
 
-.imagem-sobrenos {
+img.imagem-sobrenos {
 	width: 640px;
 	margin: 0 auto;
 }
 
-.imagem-sobrenos2 {
+img.imagem-sobrenos2 {
 	width: 640px;
 	margin: 0 auto;
 }
@@ -165,7 +180,8 @@ nav .carrinho img {
   text-align: right;
   padding-right: 5%;
   margin-left: 10px;
-  float: left
+  float: left;
+  text-align: justify;
 }
 
 .itens2 {
