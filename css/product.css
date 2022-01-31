@@ -1,12 +1,84 @@
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     background: white;
 }
 
 .frutas {
-    max-width: 927px;
-    width: 100%;
     margin-top: 15px;
-    margin-left: 40px;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .frutas img{
@@ -23,8 +95,14 @@ body {
     font-family: Lato;
     font-size: 30px;
     line-height: 39px;
-    width: 290px;
     text-align: left;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.frutas h2 a {
+    color: white;
+    zoom: 80%;
 }
 
 .frutas h3 {
@@ -32,7 +110,8 @@ body {
     font-size: 28px;
     line-height: 36px;
     width: 157px;
-    text-align: left;  
+    text-align: left;
+    margin-left: 20px;  
 }
 
 .frutas h4 {
@@ -41,9 +120,10 @@ body {
     font-size: 17px;
     width: 157px;
     text-align: left; 
+    margin-left: 20px;
 }
 
-.frutas p {
+.frutas p, ul {
     color: #47525E;
     font-family: Bree Serif;
     font-size: 16px;
@@ -54,9 +134,8 @@ body {
 }
 
 .frutas p:last-of-type:first-line {
-    color: black;
+    color: rgb(0, 0, 9);
     font-size: 19px;
-    line-height: 20px;
     font-weight: bold;
 }
 
@@ -64,7 +143,6 @@ body {
   color: #47525E;
   font-family: sans-serif;
   font-size: 21px;
-  line-height: 27px;
   text-align: left;
 }
 
@@ -77,37 +155,41 @@ body {
     position: absolute;
     max-width: 390px;
     width: 100%;
-    left: 490px;
-    top: 135px
+    right: 30vw;
+    top: 135px;
 }
 
-.item-info p {
+.item-info ul {
+    margin-top: -30px;
+}
+
+.item-info ul li {
     width: 390px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-indent: -9px;
+    margin-left: 40px;
 }
 
 .frete {
     position: absolute;
-    top: 100px;
-    left: 1050px;
+    text-align: center;
+    top: 191px;
+    right: 4vw;
     width: 312px;
     border: 2px solid #5A6978;
     border-radius: 65px;
-    width: 312px;
-    height: 450px;
+    height: 438px;
 }
 
 .frete img {
     width: 50px;
     border-radius: 50px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .frete p:first-of-type {
-    position: absolute;
-    top: 30px;
-    left: 65px;
-    color: #00C21C;
+    color: #00a650;
     font-weight: bold;
     font-size: large;
 }
@@ -124,28 +206,26 @@ body {
 
 .frete p {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.frete label, input, select {
-    margin-left: 45px;
-}
 
 #adicionar {
-    margin-left: 55px;
-    background: #00C21C;
+    background: #285d56d7;
     border-radius: 5px;
     width: 200px;
     height: 40px;
-    color: black;
+    color: rgba(255, 255, 255, 0.788);
     font-size: 17px;
     font-weight: bold;
 }
 
 #frete {
-    color: black;
-    background: #00C21C;
+    color: rgba(255, 255, 255, 0.788);
+    background: #285d56d7;
     width: 70px;
     border-radius: 5px;
     font-weight: bold;
@@ -153,6 +233,7 @@ body {
 
 #frete:hover, #adicionar:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    background: #285D56;
 }
 
 .outros-produtos {
@@ -160,7 +241,7 @@ body {
     border-radius: 4px;
     margin: 30px;
     justify-content: space-between;
-    width: 700px;
+    width: 40vw;
 }
 
 .outros-produtos h4{
@@ -175,18 +256,20 @@ line-height: 39px;
 }
 
 .produto {
-  display: block; 
-  background-color: #fff;
+  display: flex; 
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.802);
   margin-top: 90px;
   margin-right: 30px;
   border-radius: 20px;
-  width: 260px;
-
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .produto img{
   border-radius: 20px;
-  width: 260px;
+  width: 240px;
 }
 
 .produto p {
@@ -197,11 +280,7 @@ line-height: 39px;
 }
 
 .produto button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: #fff;
+  text-align: center;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -209,20 +288,22 @@ line-height: 39px;
   font-weight: 600;
   margin-top: 35px;
   margin-bottom: 40px;
-  margin-left: 32%;
+  color: rgba(255, 255, 255, 0.788);
+  background: #285d56d7;
+  width: 100px;
 }
 
 .produto:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .produto button:hover {
-  background-color: #285D56;
   transition: 0.5s;
-  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  background: #285D56;
 }
 
-.vendedor {
+.detalhes-vendedor {
     width: 312px;
     height: 300px;
     position: absolute;
@@ -235,18 +316,97 @@ line-height: 39px;
     padding-top: 30px;
 }
 
-.vendedor img {
+.detalhes-vendedor img {
     width: 70px;
     position: inherit;
-    left: 40px;
+    left: 30px;
 }
 
-.vendedor p {
+.detalhes-vendedor p {
     text-align: right;
-    margin-right: 50px;
-    margin-top: 20px;
+    margin-right: 30px;
 }
 
-.vendedor iframe {
-    margin-top: 40px;
+.detalhes-vendedor iframe {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1250px) {
+    .frete {
+        position: inherit;
+        margin-bottom: 20px;
+    }
+    .detalhes-vendedor {
+        top: 650px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .item-info {
+        left: 50vw;
+        right: none;
+        text-align: justify;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+    .frutas img {
+        width: 50vw;
+    }
+    .outros-produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 92vw;
+    }
+    .outros-produtos h4 {
+        margin-left: 0px;
+    }
+    .produto {
+        margin: 60px 0px 0px 0px;
+        position: inherit;
+    }
+    .produto p {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frutas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-info {
+        position: inherit;
+    }
+    .detalhes-vendedor {
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        margin-bottom: 50px;
+    }
+    .detalhes-vendedor h3 {
+        margin-top: -10;
+    }
+    .detalhes-vendedor img {
+        align-self: center;
+    }
+    .detalhes-vendedor p {
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
+    .detalhes-vendedor iframe{
+        align-self: center;
+        margin-top: 0px;
+    }
 }
