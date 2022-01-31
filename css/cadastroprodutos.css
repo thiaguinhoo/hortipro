@@ -56,19 +56,20 @@ body {
 @media screen and (max-width:1301px){
     #main-container{
       width: 70%;
+      background-color: rgba(220, 226, 220, 0.788)
     }
 }
 
 @media screen and (max-width:768px){
     #main-container{
       width: 80%;
-      background-color: rgb(250, 239, 191);
+      background-color: rgba(250, 239, 191, 0.753);
     }
 }
 
 @media screen and (max-width:460px){
     #main-container{
       width: 90%;
-      background-color: rgb(248, 228, 112);
+      background-color: rgba(184, 184, 180, 0.664);
     }
 }
