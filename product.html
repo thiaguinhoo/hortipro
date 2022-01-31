@@ -33,7 +33,7 @@
                 autofocus="" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off" tabindex="2"
                 value="" aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="list" id="cb1-edit"
                 aria-expanded="false" role="combobox">
-            <button type="submit">Buscar</button>
+            <button type="submit"></button>
         </div>
         <div class="menu">
             <div id="myLinks">
@@ -68,22 +68,24 @@
         <h1>Frutas</h1>
         <hr>
         <img src="https://http2.mlstatic.com/D_NQ_NP_687568-MLB43740376981_102020-O.webp" alt="Maçã Fuji">
-        <hr />
         <div class="item-info">
-            <h2>Maçã Fuji</h2>
+            <h2>Maçã Fuji <a href="" alt="Favoritar">🤍</a></h2>
             <h3>R$ 2,90</h3>
             <h4>em até 6x sem juros</h4>
             <p>Peso da unidade: 250g</p>
-            <p>Detalhes sobre os benefícios da fruta:<br>
-                Melhora a função cerebral. <br>
-                É boa para o coração.<br>
-                Diminui o risco de diabetes.<br>
-                Afasta a prisão de ventre.<br>
-                Previne o câncer.<br>
-                Combate a asma.<br>
-                Previne cáries.<br>
-                Fortalece o sistema imunológico.</p>
+            <p>Detalhes sobre os benefícios da fruta:
+            <ul>
+                <li>Melhora a função cerebral. <br>
+                <li>É boa para o coração.<br>
+                <li>Diminui o risco de diabetes.<br>
+                <li>Afasta a prisão de ventre.<br>
+                <li>Previne o câncer.<br>
+                <li>Combate a asma.<br>
+                <li>Previne cáries.<br>
+                <li>Fortalece o sistema imunológico.
+            </ul>
         </div>
+        <hr>
     </section>
     <section class="frete">
         <img src="https://i.pinimg.com/236x/5d/26/a1/5d26a173f443cbd190e34481438d474b.jpg"
@@ -93,7 +95,7 @@
         <p><a href="" target="_blank">Mais informações</a></p>
         <label for="cep-input">Calcular frete e prazo de entrega</label>
         <input type="text" placeholder="Digite seu CEP" id="cep-input">
-        <button type="submit" id="frete">Calcular</button>
+        <button type="submit" id="frete">Calcular</button><br>
         <label for="quantidade">Estoque disponível</label>
         <select name="Quantidade" id="quantidade">
             <option value="" disabled selected></option>
@@ -107,35 +109,115 @@
             <p>Você pode comprar até 5kg</p>
             <button type="submit" id="adicionar">Adicionar ao carrinho</button>
     </section>
+    <section class="detalhes-vendedor">
+        <h3>Detalhes do vendedor</h3>
+        <img src="img/supermercado.png" alt="Logo do Supermercado">
+        <p>Supermercados CRF <br>
+            Nota: ****</p>
+        <iframe id="localizacao"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.1481026848696!2d-43.69546527078961!3d-22.55693616056568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9949358b49c421%3A0x2c0347dd4579d56d!2sR.%20Pref.%20Jose%20Maria%20Lima%2C%2050%20-%20Pacheco%2C%20Eng.%20Paulo%20de%20Frontin%20-%20RJ%2C%2026650-000!5e0!3m2!1spt-BR!2sbr!4v1642024502584!5m2!1spt-BR!2sbr"
+            width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
     <section class="outros-produtos">
         <h4>Você também pode se interessar por:</h4>
         <div class="produto">
             <a href="" target="_blank"><img src="./imgs/Manga-Palmer-Organica-900g---Raizs.jpg" alt="manga"> </a>
-            <p>Manga Palmer Organica<br>900g</p>
+            <p>Manga Palmer<br>900g</p>
             <button>Adicionar</button>
         </div>
         <div class="produto">
             <a href="" target="_blank"><img src="./imgs/Abobrinha-Italiana-Organica--600g---800g----Raizs.jpg"
                     alt="abobrinha"> </a>
-            <p>Abobrinha Italiana Organica<br>600g-800g</p>
+            <p>Abobrinha Italiana<br>600g-800g</p>
             <button>Adicionar</button>
         </div>
         <div class="produto">
             <a href="" target="_blank"><img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="banana">
             </a>
-            <p>Banana Prata Organica<br>600g-800g</p>
+            <p>Banana Prata<br>600g-800g</p>
             <button>Adicionar</button>
         </div>
     </section>
-    <section class="vendedor">
-        <h3>Detalhes do vendedor</h3>
-        <img src="img/supermercado.png" alt="Logo do Supermercado">
-        <p>Supermercados CRF</p>
-        <p>Nota: ****</p>
-        <iframe id="localizacao"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.1481026848696!2d-43.69546527078961!3d-22.55693616056568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9949358b49c421%3A0x2c0347dd4579d56d!2sR.%20Pref.%20Jose%20Maria%20Lima%2C%2050%20-%20Pacheco%2C%20Eng.%20Paulo%20de%20Frontin%20-%20RJ%2C%2026650-000!5e0!3m2!1spt-BR!2sbr!4v1642024502584!5m2!1spt-BR!2sbr"
-            width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+
+    <footer class="footer1">
+
+
+        <div class="container-F">
+
+
+
+            <div class="li-a">
+                <ul>
+                    <li>
+                        <h2>INSTITUCIONAL</h2>
+                        <h3> <a href="./about-us.html" target="_blank">Sobre Nós</a> </h3>
+                        <h3><a href="./termos-e-condicoes.md" target="_blank">Termos e Condições</a></h3>
+                        <h3><a href="./como-comprar.html" target="_blank">Como Comprar</a></h3>
+                        <h3><a href="./politicas-de-privacidade.md" target="_blank">Política de Privacidade</a></h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="li-b">
+                <ul>
+                    <li>
+                        <h2>OPORTUNIDADES</h2>
+                        <h3> <a href="./sejaUmFornecedor.html" target="_blank">Seja um Fornecedor</a> </h3>
+                        <h3><a href="./conhecaOsProdutores.html" target="_blank">Conheça os Produtores</a></h3>
+                        <h3><a href="./trabalheConosco.html" target="_blank">Trabalhe Conosco</a></h3>
+                        <h3><a href="./central-de-ajuda.html" target="_blank">Central de Ajuda</a></h3>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="li-c">
+                <ul>
+                    <li><img src="./img/instagram.png" /> </li>
+                    <li><img src="./img/Facebook.png" /></li>
+
+                </ul>
+
+                <ul>
+                    <li class="logo"><img src="./img/logoHortiproVazada.png" /></li>
+                    <li class="inscreva-se">
+                        <h2> Inscreva-se </h2>
+                    </li>
+                </ul>
+                <ul>
+                    <li class=input> <input type="email" value="Digite seu e-mail"> </li>
+                </ul>
+            </div>
+            <!--div class container-->
+            <div class="clear"></div>
+
+        </div>
+
+    </footer>
+    <!--footer1-->
+
+
+
+    <footer class="footer2">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <h3> Termos de Uso</h3>
+                </li>
+                <li>
+                    <h3> <a href="./home.html">TOPO </a></h3>
+                </li>
+                <li>
+                    <h3><i class="icofont-arrow-up"></i></h3>
+                </li>
+                <li>
+                    <h4> Grupo Hortipro S.A / CNPJ 05.658.066/0001-85</h4>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
 </body>
+<script src="mobile-navbar.js"></script>
 
 </html>
