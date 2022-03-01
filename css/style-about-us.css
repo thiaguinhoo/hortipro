@@ -57,7 +57,6 @@ nav {
   z-index: 10;
   padding-left: 3vw;
   padding-right: 2vw;
-  
 }
 
 nav li {
@@ -80,8 +79,6 @@ nav img{
   justify-content: center;
 }
 
-
-
 nav input {
   height: 23px;
   background: whitesmoke;
@@ -95,7 +92,6 @@ nav button {
   width: 60px;
   border-radius: 8px;
 }
-
 
 .links {
   display: flex;
@@ -135,9 +131,6 @@ nav .carrinho img {
     border-radius: 10px;
     padding:25px;
     background: #dddddd;
-
-  
-  
 }
 
 .titulo-principal {
@@ -148,7 +141,6 @@ nav .carrinho img {
 }
 
 .sobre-nos {
-
   display: inline-block;
 	padding: 3em 0;
 	
