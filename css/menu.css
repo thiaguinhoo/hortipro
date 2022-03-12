@@ -41,7 +41,7 @@ nav input {
 }
 
 nav button {
-  background: whitesmoke url("../../../../img/search.svg") no-repeat 40% center;
+  background: whitesmoke url("../img/search.svg") no-repeat 40% center;
   display: flex;
   align-items: center;
   justify-content: center;
