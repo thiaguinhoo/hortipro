@@ -8,15 +8,14 @@ body {
   max-width: 100vw;
   width: 100%;
   height: 2000px;
-  font-family: 'Poppins';
-  background: linear-gradient(180deg, #285d56, #C8D25C, #285d56);
+  font-family: "Poppins";
+  background: linear-gradient(180deg, #285d56, #c8d25c, #285d56);
   background-attachment: fixed;
 }
 
 nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: -1px;
+  position: fixed;
+  top: 0;
   background-color: #285d56;
   width: 100%;
   height: 48px;
@@ -27,7 +26,6 @@ nav {
   padding-right: 4vw;
   display: flex;
 }
-
 
 nav img {
   height: 40px;
@@ -81,7 +79,7 @@ nav button:active {
 .menu a {
   color: white;
   text-decoration: none;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .menu a:first-of-type {
@@ -94,13 +92,13 @@ nav button:active {
 }
 
 .menu a img {
-  opacity:0.8;
+  opacity: 0.8;
   width: 29px;
   margin-left: 4vw;
 }
 
 .menu a img:hover {
-  -moz-opacity:1;
+  -moz-opacity: 1;
   opacity: 1;
   transition: 0.3s;
 }
@@ -111,15 +109,14 @@ nav button:active {
   position: absolute;
   top: 60px;
   right: 4vw;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .carrinho img:hover {
- -moz-opacity:1;
- transition: 0.3s;
-  opacity:1;
+  -moz-opacity: 1;
+  transition: 0.3s;
+  opacity: 1;
 }
-
 
 @media screen and (max-width: 1010px) {
   .menu a:first-of-type {
