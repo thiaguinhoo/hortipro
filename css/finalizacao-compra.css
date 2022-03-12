@@ -1,0 +1,363 @@
+.painel *{
+    margin: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: #285D56;
+    border:none;
+  }
+
+.painel {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.painel #produtovalor{
+    display: flex;
+    flex-direction: row;
+    align-items :left;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+.painel h1{
+    font-size: 2em;
+    line-height: 2px;
+    max-width: 100%;
+
+}
+
+.painel div{
+    width:20%;
+    height: 20%;
+    padding: 1px;
+    border: 1px;
+    margin: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+.painel div.produtoimg{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+  
+.painel div.dadosproduto{
+    margin: 10px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+  
+.painel input [type="number"]{
+    border:5px solid black;
+    box-sizing:initial;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 12px;
+}
+  
+.painel div.total{
+    font-size: 2em;
+    margin: 10px;
+}
+
+.painel hr{
+    margin: 10px 0;
+    border: 1 solid gray;
+    border-top: 1px solid gray;
+    max-width: 100%;
+}
+  
+.painel div.endereco{
+    font-size: 2em;
+    display: block;
+    width: 100%;
+}
+  
+.painel div.retirada{
+    font-size: 25px;
+    display: inline-block;
+}
+  
+.painel div.totalfrete{
+    font-size: 3em;
+    display: inline-block;
+    text-align:left;
+}
+
+.painel .confirmarcompra{
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+ }
+  
+.painel input{
+    border: 2px solid #285D56;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    text-align-last: center;
+    max-width: 100%;
+}
+
+.painel input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    border:2px solid #285D56;
+    border-radius: 20px;
+    height: 60px;
+    width: 300px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.painel input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #285D56, #C8D25C);
+}
+
+@media screen and (max-width:1280px){
+    .painel div{
+      width: 100%;
+    }
+    
+    .painel div{
+        width: 50%;
+    }
+    
+    .painel *{
+      margin: 5px;
+      padding: 2px;
+      box-sizing: border-box;
+      font-family: Poppins;
+      color: #285D56;
+      border:none;
+    }
+  
+    .painel #produtovalor{
+      display: block;
+    }
+  
+    .painel h1{
+      font-size: 1.5em;
+    }
+  
+    .painel div.produtoimg img{
+      width: 100px;
+      height: 100px;
+    }
+  
+  
+    .painel div.dadosproduto h3{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h4{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h6{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h2{
+      font-size: 0.5em;
+    }
+  
+    .painel div.quantidade input{
+      font-size: 0.5em;
+      height: 10px;
+      width: 300px;
+    }
+  
+    .painel #valorfinal{
+      display: block;
+    }
+  
+    .painel #valorfinal .retirada{
+      font-size: 1.5em;
+    }
+  
+    .painel #valorfinal .endereco{
+      font-size: 1em;
+    }
+  
+    .painel #valorfinal .totalfrete{
+      font-size: 1.5em;
+    }
+  
+    .painel input[type="submit"]{
+      height: 40px;
+      width: 300px;
+      font-size: 1em;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width:820px){
+    .painel div{
+      width: 70%;
+    }
+
+    .painel *{
+        margin: 5px;
+        padding: 2px;
+        box-sizing: border-box;
+        font-family: Poppins;
+        color: #285D56;
+        border:none;
+      }
+    
+      .painel #produtovalor{
+        display: block;
+      }
+    
+      .painel h1{
+        font-size: 2.5em;
+      }
+    
+      .painel div.produtoimg img{
+        width: 100px;
+        height: 100px;
+      }
+    
+    
+      .painel div.dadosproduto h3{
+        font-size: 1.5em;
+      }
+    
+      .painel div.dadosproduto h4{
+        font-size: 1.5em;
+      }
+    
+      .painel div.dadosproduto h6{
+        font-size: 1.5em;
+      }
+    
+      .painel div.dadosproduto h2{
+        font-size: 1.5em;
+      }
+    
+      .painel div.quantidade input{
+        font-size: 1.5em;
+        height: 10px;
+        width: 300px;
+      }
+    
+      .painel #valorfinal{
+        display: block;
+        font-size: 1.5em;
+      }
+    
+      .painel #valorfinal .retirada{
+        font-size: 2.5em;
+      }
+    
+      .painel #valorfinal .endereco{
+        font-size: 2em;
+      }
+    
+      .painel #valorfinal .totalfrete{
+        font-size: 2.5em;
+      }
+    
+      .painel input[type="submit"]{
+        height: 60px;
+        width: 300px;
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+  
+  }
+
+
+@media screen and (max-width:460px){
+    .painel div{
+        width: 50%;
+    }
+    
+    .painel *{
+      margin: 5px;
+      padding: 2px;
+      box-sizing: border-box;
+      font-family: Poppins;
+      color: #285D56;
+      border:none;
+    }
+  
+    .painel #produtovalor{
+      display: block;
+    }
+  
+    .painel h1{
+      font-size: 1.5em;
+    }
+  
+    .painel div.produtoimg img{
+      width: 100px;
+      height: 100px;
+    }
+  
+  
+    .painel div.dadosproduto h3{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h4{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h6{
+      font-size: 0.5em;
+    }
+  
+    .painel div.dadosproduto h2{
+      font-size: 0.5em;
+    }
+  
+    .painel div.quantidade input{
+      font-size: 0.5em;
+      height: 10px;
+      width: 300px;
+    }
+  
+    .painel #valorfinal{
+      display: block;
+    }
+  
+    .painel #valorfinal .retirada{
+      font-size: 1.5em;
+    }
+  
+    .painel #valorfinal .endereco{
+      font-size: 1em;
+    }
+  
+    .painel #valorfinal .totalfrete{
+      font-size: 1.5em;
+    }
+  
+    .painel input[type="submit"]{
+      height: 40px;
+      width: 300px;
+      font-size: 1em;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
