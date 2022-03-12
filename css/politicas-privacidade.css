@@ -49,3 +49,16 @@ body {
   text-align: justify;
   font-size: 1em;
 }
+
+@media screen and (max-width: 420px) {
+
+  .inline {
+    text-align: center!important;
+    margin-top: 20px;
+  }
+
+  .inline-block {
+    display: block;
+  }
+
+}
