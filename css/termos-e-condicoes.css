@@ -1,128 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-.logotipo {
-
-    background-color: #285D56;
-    width: 100vw;
-    max-width: 100%;
-    min-width: 100%;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
- .logotipo, img {
-    height: 10vh;
-    width: auto;
-    
+body {
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 #main-container {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 10px;
-    padding:25px;
+  background: linear-gradient(45deg, #285D56, #C8D25C);
+  background-repeat: no-repeat;
+  padding: 10px;
 }
 
 #main-container h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 2em;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
 }
 
 #main-container h3 {
-    text-align: justify;
-    margin-bottom: 25px;
-    font-size: 1.25em;
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 1.25em;
+}
+
+.container {
+  background-color: #f8f6f4;
+  padding: 10px;
+  width: 80vw;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
 }
 
 #main-container p {
-
-    text-align: justify;
-    font-size: 1em;
+  text-align: justify;
+  font-size: 1em;
 }
-
-@media (max-width: 575px) {
-    
-
-    .logotipo, img {
-        height: 50vh;
-        width: 700px;
-        
-    }
-
-    #main-container {
-        width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border-radius: 10px;
-        padding:25px;
-    }
-
-}
-
-@media only screen and (min-width:576px) and (max-width:768px) {
-
-    .logotipo, img {
-        height: 10vh;
-        
-        
-    }
-
-    #main-container {
-        width: 576px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border-radius: 10px;
-        padding:25px;
-    }
-
-    #main-container h1 {
-        font-size: 1,25em;
-        text-align: justify;
-    }
-    
-}
-
-@media only screen and (min-width:769px) and (max-width:992px) {
-
-    .logotipo, img {
-        height: 10vh;
-        
-    }
-
-    #main-container {
-        width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border-radius: 10px;
-        padding:25px;
-    }
-    
-}
-
-@media only screen and (min-width:993px) and (max-width:1199px) {
-
-    .logotipo, img {
-        height: 10vh;
-        
-    }
-
-    #main-container {
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        border-radius: 10px;
-        padding:25px;
-    }
-    
-}
-
