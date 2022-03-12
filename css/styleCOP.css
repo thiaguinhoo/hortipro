@@ -220,7 +220,7 @@ nav li a:hover {
 section.conheca-produtores{
   width: 100%;
   height: 600px;
-  background:url(../../../img/agricultor-2.jpg);
+  background:url(../img/agricultor-2.jpg);
   background-size: cover; 
 }
 
@@ -271,7 +271,7 @@ div.container-p{
  section.conheca-produtores-2{
   width: 100%;
   height: 600px;
-  background:url(../../../img/agricultor-3.png);
+  background:url(../img/agricultor-3.png);
   background-size: cover;
 }
  div.container-p2 p.wagner{
