@@ -11,7 +11,7 @@ body {
 }
 
 #main-container {
-  background: linear-gradient(45deg, #285D56, #C8D25C);
+  background: linear-gradient(45deg, #285d56, #c8d25c);
   background-repeat: no-repeat;
   padding: 10px;
 }
@@ -34,6 +34,7 @@ body {
   width: 80vw;
   padding: 40px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .title {

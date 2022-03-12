@@ -154,7 +154,7 @@ ul {
 }
 
 #adicionar {
-  background: linear-gradient(to left, #285d56, #c8d25c);
+  background-color: #285d56;
   cursor: pointer;
   color: white;
   font-size: 0.9em;
@@ -168,7 +168,7 @@ ul {
 }
 
 #frete {
-  background: linear-gradient(to left, #285d56, #c8d25c);
+  background-color: #285d56;
   cursor: pointer;
   color: white;
   font-size: 0.9em;
@@ -240,7 +240,7 @@ ul {
   font-weight: 600;
   margin-top: 35px;
   margin-bottom: 40px;
-  background: linear-gradient(to left, #285d56, #c8d25c);
+  background-color: #285d56;
   cursor: pointer;
   color: white;
   font-size: 0.9em;

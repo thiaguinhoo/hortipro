@@ -67,6 +67,14 @@ footer {
   height: 20px;
 }
 
+.footerLinks a {
+  opacity: 0.8;
+}
+
+.footerLinks a:hover {
+  opacity: 1;
+}
+
 .newslatter {
   display: flex;
   flex-direction: column;
