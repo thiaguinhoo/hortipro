@@ -98,3 +98,35 @@ body {
 #receitas {
   float: left;
 }
+
+@media screen and (max-width: 900px) {
+  .info-img {
+    display: none;
+  }
+
+  #frutas-uwd {
+    display: block;
+    width: 85vw;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .informativos {
+    display: block;
+    margin: 0;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .info-text {
+    margin-top: 40px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .info-text p {
+    width: 80vw;
+    margin-left: 6vw;
+  }
+}
