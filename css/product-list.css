@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+}
+
+body {
+  background: linear-gradient(45deg, #285D56, #C8D25C);
+  background-repeat: no-repeat;
+  margin-left: 5%;
+}
+
+h3 {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 45px;
+  color: #fff
+}
+
+.nossaHorta {
+  display: flex;
+  width: 60%;
+  border-radius: 4px;
+  margin: 30px;
+  right: 30px;
+}
+
+.mercearia {
+  display: flex;
+  width: 60%;
+  border-radius: 4px;
+  margin: 30px;
+ }
+
+.produto {
+  display: block; 
+  background-color: #fff;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.produto img{
+  border-radius: 20px;
+}
+
+.produto p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.produto button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  margin-left: 32%;
+}
+
+.produto:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.produto button:hover {
+  background-color: #285D56;
+  transition: 0.5s;
+  color: #fff;
+}
+

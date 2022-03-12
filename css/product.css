@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  width: 100%;
+  font-family: "Poppins";
+  background: white;
+  background-attachment: fixed;
+}
+
+hr {
+  width: 100%;
+  align-self: center;
+}
+
+.bodyPage {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.frutas {
+  margin-top: 15px;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.frutasFilho {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.frutas img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.frutas h1 {
+  text-align: center;
+}
+
+.frutas hr:first-of-type {
+  margin-top: 8px;
+}
+
+.frutas h2 {
+  font-size: 30px;
+  line-height: 39px;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.frutas h2 a {
+  color: white;
+  zoom: 80%;
+}
+
+.frutas h3 {
+  font-size: 28px;
+  line-height: 36px;
+  width: 157px;
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.frutas h4 {
+  color: #47525e;
+  font-size: 17px;
+  width: 157px;
+  text-align: left;
+  margin-left: 1vw;
+}
+
+.frutas p,
+ul {
+  color: #47525e;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 1vw;
+}
+
+.frutas p:last-of-type {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.frutas hr:last-of-type {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item-info {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 5px 0 5px;
+  backdrop-filter: blur(100px) brightness(150%);
+  padding-left: 10px;
+}
+
+.item-info ul li {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-left: 1vw;
+}
+
+.frete {
+  text-align: center;
+  width: 312px;
+  border: 2px solid #5a6978;
+  border-radius: 65px;
+  height: 455px;
+  margin-top: 60px;
+  margin-right: 4vw;
+  backdrop-filter: blur(100px) brightness(150%);
+}
+
+.frete img {
+  width: 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.frete p:first-of-type {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.frete h5 {
+  color: #47525e;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.frete p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#adicionar {
+  background: linear-gradient(to left, #285d56, #c8d25c);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 300;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#frete {
+  background: linear-gradient(to left, #285d56, #c8d25c);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 300;
+  border-radius: 4px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+#frete:hover,
+#adicionar:hover {
+  background: linear-gradient(to right, #285d56, #c8d25c);
+}
+
+.bodyPageDown {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.outros-produtos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+
+.outros-produtos h4 {
+  padding-bottom: 45px;
+  color: black;
+  font-size: 23px;
+  line-height: 39px;
+}
+
+.produtos {
+  display: flex;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.802);
+  margin-right: 30px;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 420px;
+  margin-bottom: 40px;
+}
+
+.produto img {
+  border-radius: 20px;
+  width: 240px;
+}
+
+.produto p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.produto button {
+  text-align: center;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  background: linear-gradient(to left, #285d56, #c8d25c);
+  cursor: pointer;
+  color: white;
+  font-size: 0.9em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 130px;
+}
+
+.produto:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.produto button:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  background: linear-gradient(to right, #285d56, #c8d25c);
+}
+
+.detalhes-vendedor {
+  width: 312px;
+  height: 300px;
+  border: 2px solid #5a6978;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  margin-right: 4vw;
+  margin-top: 70px;
+}
+
+.detalhes-vendedor img {
+  width: 70px;
+  position: inherit;
+  left: 30px;
+}
+
+.detalhes-vendedor p {
+  text-align: center;
+}
+
+.detalhes-vendedor iframe {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1367px) {
+  .bodyPage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frete {
+    margin: 0 0 20px 0;
+  }
+  .detalhes-vendedor {
+    top: 650px;
+  }
+  .item-info {
+    margin-left: 2vw;
+  }
+  .frutas {
+    width: 92%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .frutas img {
+    width: 50vw;
+  }
+  .frutas h2 {
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+  .frutas h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .frutas h4 {
+    margin: 0;
+    padding: 0;
+  }
+  .frutas p {
+    margin-left: 0;
+    padding: 0;
+  }
+  .frutasFilho {
+    justify-content: space-between;
+  }
+  .outros-produtos {
+    width: 100vw;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .bodyPageDown {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .outros-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .outros-produtos h4 {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .produtos {
+    margin: 80px 0 0 0;
+    padding: 0;
+  }
+  .produto {
+    margin: 60px 30px 0 30px;
+    position: inherit;
+  }
+  .produto p {
+    margin-left: 0;
+  }
+
+  .detalhes-vendedor {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .frutasFilho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .frutas img {
+    width: 70vw;
+  }
+
+  .produto:first-of-type {
+    margin-left: 635px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .frutas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalhes-vendedor iframe {
+    align-self: center;
+    margin-top: 0px;
+  }
+}

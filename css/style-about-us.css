@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  background: linear-gradient(45deg, #285d56, #c8d25c);
+  background-repeat: no-repeat;
+  display: flex;
+  padding-bottom: 5%;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 5rem 0 5rem;
+  clear: left;
+  color: azure;
+}
+
+.body p {
+  font-size: 100%;
+  text-align: justify;
+  background-color: azure;
+  padding: 5% 10%;
+  border-radius: 5%;
+  opacity: 70%;
+  margin-bottom: 5%;
+}
+
+.body img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  .body img {
+    display: flex;
+  }
+
+  @media (min-width: 992px) {
+    .body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .body img {
+      width: 50%;
+    }
+
+    .body p {
+      display: inline-flex;
+      border-radius: 0%;
+    }
+
+    .conteudo-sobrenos {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5%;
+    }
+
+    .conteudo-beneficios {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .imagem-sobrenos {
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 5%;
+    }
+
+    .imagem-sobrenos2 {
+      display: inline-flex;
+      justify-content: center;
+      padding-right: 5%;
+    }
+  }
+}
