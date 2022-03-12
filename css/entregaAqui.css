@@ -4,15 +4,15 @@ box-sizing:border-box;
 padding:0;
 }
 
-div.linha-top{
 
-}
 
 div.top{
   width: 100%;
   height: 300px;
   background-color:rgb(180, 198, 166) ;
-  margin-top: -40px;
+
+padding-top: 50px ;
+
   
 
 }
@@ -43,12 +43,12 @@ div.down{
   width: 100%;
   height: 600px;
   margin-top: -40px;
-
-}
-div.imagemMaps{
-  background-color: url(../../../img/mapsImagem.png) ;
+  background-image: url(../img/mapsImagem.png) ;
   background-size:contain;
+  background-repeat: no-repeat;
+  background-position-x: 700px;
 }
+
 
 div.down p{
   font-family: Poppins;
