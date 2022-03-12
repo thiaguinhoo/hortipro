@@ -1,0 +1,95 @@
+body{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+div.linha-top{
+
+}
+
+div.top{
+  width: 100%;
+  height: 300px;
+  background-color:rgb(180, 198, 166) ;
+  margin-top: -40px;
+  
+
+}
+body div.top h1{
+  font-family: Poppins;
+  font-size: 3em;
+  font-weight:bold;
+  color: rgb(71, 119, 104);
+  text-align: center;
+  padding-top: 70px;
+ 
+
+}
+
+div.separador-1{
+  width:100%;
+  height: 4px;
+ background-color:white;
+}
+
+div.separador-2{
+  width:100%;
+  height: 15px;
+  background-color:black;
+}
+
+div.down{
+  width: 100%;
+  height: 600px;
+  margin-top: -40px;
+
+}
+div.imagemMaps{
+  background-color: url(../../../img/mapsImagem.png) ;
+  background-size:contain;
+}
+
+div.down p{
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight:bold;
+  color: rgb(71, 119, 104);
+  text-align: center;
+  padding-top: 70px;
+}
+div.down input{
+  width: 30%;
+  height:40px;
+  margin-left: 465px;
+  border-radius: 5px;
+ 
+}
+div.down p.um{
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight:bold;
+  color: rgb(71, 119, 104);
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+div.down p.dois{
+  font-family: Poppins;
+  font-size: 2em;
+  font-weight:bold;
+  color: rgb(71, 119, 104);
+  text-align: left;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+  div.lista{
+    font-family: Poppins;
+    font-size: 1.5em;
+    font-weight:bold;
+    color: rgb(71, 119, 104);
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 20px;
+}
