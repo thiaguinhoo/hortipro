@@ -28,6 +28,11 @@ body {
   font-size: 1.25em;
 }
 
+#main-container p {
+  text-align: justify;
+  font-size: 1em;
+}
+
 .container {
   background-color: #f8f6f4;
   padding: 10px;
@@ -42,9 +47,4 @@ body {
 
 .subtitle {
   font-size: 1.2rem;
-}
-
-#main-container p {
-  text-align: justify;
-  font-size: 1em;
 }
