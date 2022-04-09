@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  list-style-type: none;
 }
 
 .body {
@@ -12,6 +13,7 @@
   padding-bottom: 5%;
   padding-left: 4vw;
   padding-right: 4vw;
+  list-style-type: none;
 }
 
 .titulo-principal {
@@ -30,11 +32,13 @@
   border-radius: 5%;
   opacity: 70%;
   margin-bottom: 5%;
+ 
 }
 
 .body img {
   width: 100%;
   margin-bottom: 5%;
+  
 }
 
 @media (min-width: 768px) {
@@ -48,26 +52,32 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      
     }
 
     .body img {
       width: 50%;
+    
     }
 
     .body p {
       display: inline-flex;
       border-radius: 0%;
+    
     }
 
     .conteudo-sobrenos {
       display: flex;
       flex-direction: row;
       margin-bottom: 5%;
+    
+      
     }
 
     .conteudo-beneficios {
       display: flex;
       flex-direction: row-reverse;
+   
     }
 
     .imagem-sobrenos {
@@ -83,3 +93,4 @@
     }
   }
 }
+
