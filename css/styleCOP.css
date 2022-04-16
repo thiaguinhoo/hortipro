@@ -220,25 +220,25 @@ section.conheca-produtores {
   height: 600px;
   background: url(../img/agricultor-2.jpg);
   background-size: cover;
+  
 }
 
 div.container-p {
   width: 50%;
-  height: 400px;
+  height: 100%;
   background-color: #b4c6a6;
+  font-size: 24px;
+  border-radius: 25px
 }
 
 div.container-p p.carla {
-  
-  font-size: 26px;
   text-align: inherit;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  line-height: 40px;
+  margin-top: 30px;
   padding: 10px;
   color: rgb(47, 77, 68);
   width: 100%;
-  box-shadow: 1px 1px 8px 0px #0a1d1a;;
+  box-shadow: 1px 1px 8px 0px #0a1d1a;
+  border-radius: 25px
 }
 
 div.container-p p.simples {
@@ -248,12 +248,13 @@ div.container-p p.simples {
   text-align: inherit;
   margin-top: 20px;
   margin-bottom: 0px;
-  line-height: 40px;
+  line-height: 30px;
   padding: 10px;
   color: #b4c6a6;
   box-shadow: 1px 1px 8px 0px #0a1d1a;;
   width: 100%;
   text-align: center;
+  border-radius: 25px
 }
 p.simples a {
   text-decoration: none;
@@ -267,23 +268,26 @@ section.conheca-produtores-2 {
   height: 600px;
   background: url(../img/agricultor-3.png);
   background-size: cover;
+
 }
 div.container-p2 p.wagner {
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
+  /* font-size: 26px; */
   text-align: inherit;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 0px;
-  line-height: 40px;
+  line-height: 30px;
   padding: 10px;
   color: rgb(47, 77, 68);
-  width: 1 00%;
+  width: 100%;
   box-shadow: 1px 1px 8px 0px #0a1d1a;
+  border-radius: 25px;
+  
 }
 
 div.container-p2 p.simples2 {
   font-family: "Poppins", sans-serif;
-  font-size: 26px;
+  /* font-size: 26px; */
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
@@ -293,6 +297,7 @@ div.container-p2 p.simples2 {
   color: #b4c6a6;
   box-shadow: 1px 1px 8px 0px #0a1d1a;;
   width: 100%;
+  border-radius: 25px;
  
 }
 p.simples2 a {
@@ -303,8 +308,10 @@ p.simples2 a {
 
 div.container-p2 {
   width: 50%;
-  height: 400px;
+  height: 100%;
   background-color: #b4c6a6;
+  font-size: 24px;
+  border-radius: 25px
   
 
 }
@@ -320,7 +327,7 @@ div.container-p2 {
 
 @keyframes animate{
   0%{
-    color: #00D00A;
+    color: #006d05;
   }
   100%{
     color:#7CFA07;
@@ -343,3 +350,45 @@ p.simples2 a {
 
 
 
+@media (min-width: 481px) and (max-width: 767px){
+  .container-p{
+    margin:auto;
+    
+
+  }
+
+  div.container-p p.carla {
+    font-size: 22px;
+    
+  }
+
+  div.container-p{
+    width: 70%;
+  }
+
+  .container-p2{
+    margin:auto;
+    
+    
+
+  }
+
+  div.container-p p.wagner {
+    font-size: 22px;
+    
+  }
+
+  div.container-p2{
+    width: 70%;
+   
+  }
+
+  section.conheca-produtores {
+    background-position: center;
+  }
+
+  section.conheca-produtores-2 {
+    background-position: 40%;
+  }
+
+}
