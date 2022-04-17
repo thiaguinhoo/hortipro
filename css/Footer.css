@@ -43,6 +43,7 @@ footer {
 .footerLinks ul {
   list-style: none;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .footerLinks ul li a {
@@ -132,7 +133,8 @@ footer .newslatter input {
 }
 
 .logoFooter p{
-  color:antiquewhite
+  color:antiquewhite;
+  font-family: "Poppins", sans-serif;
 }
 
 .newslatter button{
@@ -152,4 +154,5 @@ footer .newslatter input {
     /* font-weight: bold; */
     font-size: 1em;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }

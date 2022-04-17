@@ -2,9 +2,10 @@
     margin: 20px;
     padding: 5px;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: "Poppins", sans-serif;
     color: #285D56;
     border:none;
+    text-decoration:none;
   }
 
 .painel {
@@ -140,7 +141,7 @@
       margin: 5px;
       padding: 2px;
       box-sizing: border-box;
-      font-family: Poppins;
+      font-family: "Poppins", sans-serif;
       color: #285D56;
       border:none;
     }
@@ -216,7 +217,7 @@
         margin: 5px;
         padding: 2px;
         box-sizing: border-box;
-        font-family: Poppins;
+        font-family: "Poppins", sans-serif;
         color: #285D56;
         border:none;
       }
@@ -295,7 +296,7 @@
       margin: 5px;
       padding: 2px;
       box-sizing: border-box;
-      font-family: Poppins;
+      font-family: "Poppins", sans-serif;
       color: #285D56;
       border:none;
     }
