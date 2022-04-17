@@ -2,6 +2,7 @@ body{
 margin:0;
 box-sizing:border-box;
 padding:0;
+font-family: "Poppins", sans-serif;
 }
 
 
@@ -17,7 +18,7 @@ padding-top: 50px ;
 
 }
 body div.top h1{
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: 3em;
   font-weight:bold;
   color: rgb(71, 119, 104);
@@ -31,43 +32,52 @@ div.separador-1{
   width:100%;
   height: 4px;
  background-color:white;
+ box-shadow: 1px 1px 8px 0px #282929;
 }
 
 div.separador-2{
   width:100%;
   height: 15px;
   background-color:black;
+  box-shadow: 1px 1px 8px 0px #282929;
 }
 
-div.down{
-  width: 100%;
-  height: 600px;
-  margin-top: -40px;
+/* div.down{
+  width: 60%;
+  height:90%;
+  margin-top: 40px;
   background-image: url(../img/mapsImagem.png) ;
   background-size:contain;
   background-repeat: no-repeat;
-  background-position-x: 700px;
-}
+  background-position-x: 200px;
+} */
 
 
 div.down p{
-  font-family: Poppins;
+  
   font-size: 2em;
   font-weight:bold;
   color: rgb(71, 119, 104);
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 20px;
 }
 div.down input{
-  width: 30%;
-  height:40px;
-  margin-left: 465px;
-  border-radius: 5px;
- 
+  width: 40%;
+  height:45px;
+  margin-left: 32%;
+  border-radius: 25px;
+  border-color: black;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 div.down p.um{
-  font-family: Poppins;
-  font-size: 2em;
+  font-size: 36px;
   font-weight:bold;
   color: rgb(71, 119, 104);
   text-align: left;
@@ -75,7 +85,7 @@ div.down p.um{
   margin-left: 20px;
 }
 div.down p.dois{
-  font-family: Poppins;
+
   font-size: 2em;
   font-weight:bold;
   color: rgb(71, 119, 104);
@@ -85,11 +95,42 @@ div.down p.dois{
 }
 
   div.lista{
-    font-family: Poppins;
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight:bold;
     color: rgb(71, 119, 104);
     text-align: left;
-    padding-top: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
+}
+
+
+.DigiteSeuCep input{
+  width: 190px;
+  font-size: medium;
+  padding-left: 2px;
+  border-radius: 10px;
+  border:0px;
+  text-align: center;
+  height: 30px;
+}
+
+.maps img {
+  width: 183px;
+  margin-left: 600px;
+  margin-top: -120px;
+  margin-bottom: 40px;
+}
+
+
+@media (min-width: 481px) and (max-width: 767px){
+  .maps img {
+    width: 102px;
+    margin-left: 181px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+div.down input{
+  width: 70%;
+
+}
+
 }

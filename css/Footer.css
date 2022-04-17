@@ -83,19 +83,20 @@ footer {
   color: white;
 }
 
-.newslatter input {
-  width: 190px;
-  font-size: medium;
-  padding-left: 2px;
-  border-radius: 10px;
-  border:0px;
-  text-align: center;
-  height: 30px;
-}
+
 
 
 .newslatter button {
   width: 90px;
+}
+
+footer .newslatter input {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 50%;
+  height: 30px;
+  border: 1px solid #e6ecf0;
+  text-align: center;
 }
 
 @media screen and (max-width: 830px) {
@@ -114,6 +115,11 @@ footer {
 
   footer .newslatter input {
     margin-bottom: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid #e6ecf0;
+    text-align: center;
   }
   .logoFooter p {
     margin-right: 10px;
