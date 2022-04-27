@@ -56,6 +56,11 @@ form .input-field:first-child {
     background: rgba(0, 0, 0, 0.2);
 }
 
+.ls-login-forgot{
+    font-size: 14px;
+    color: #285D56;
+    text-decoration: none;
+}
 .input-field .underline::after {
     content: '';
     position: absolute;
