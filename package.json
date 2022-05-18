@@ -1,16 +1,45 @@
 {
-  "name": "Projeto-integrador",
+  "name": "projeto-integrador",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Projeto Integrador da turma 4 da escola Digital House",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --signal SIGTERM",
+    "test": "node ./teste.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2",
-    "node": "^17.2.0"
-  }
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "celebrate": "^15.0.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "pino": "^7.11.0",
+    "pino-pretty": "^7.6.1",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.6"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tellabitt/projeto-integrador-hortipro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tellabitt/projeto-integrador-hortipro/issues"
+  },
+  "homepage": "https://github.com/tellabitt/projeto-integrador-hortipro#readme"
 }
