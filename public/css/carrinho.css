@@ -1,0 +1,85 @@
+
+  /* FIM DO BOTÃO DO CARRINHO */
+  
+  .cesta-de-compras{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-cart {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-cart li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .cart {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .cart div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 500000px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-cart {
+      position: absolute;
+      top: 5vh;
+      right: 0;
+      width: 50vw;
+      height: 99vh;
+      background: #285d56;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-cart li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .cart {
+      display: block;
+    }
+  }
+  
+  .nav-cart.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .cart.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .cart.active .line2 {
+    opacity: 0;
+  }
+  
+  .cart.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+   /* FIM DO BOTÕA DO CARRINHO */
