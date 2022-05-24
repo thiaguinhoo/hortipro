@@ -11,7 +11,6 @@
   color: black;
   padding-top: 30px;
   margin-top: 48px;
-  width: 100vw;
   align-items: center;
   text-align: center;
 }
@@ -45,7 +44,6 @@
 .lista_produtos-categoria::-webkit-scrollbar {
   display: none;
 }
-
 
 
 .lista_produtos-produto {
@@ -83,9 +81,61 @@
   margin-top: 15px;
 }
 
+.lista_produtos-produto-button:hover {
+  opacity: 0.9;
+}
+
 .lista_produtos-imagem {
   width: 300px;
   height: 300px;
   border-radius: 45px;
   margin-bottom: 15px;
+}
+
+.scroll_left {
+  color: black;
+  background-color: #63710F;
+  position: absolute;
+  top: 45%;
+  left: 45px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.scroll_left:hover {
+  opacity: 0.8
+}
+
+.scroll_right:hover {
+  opacity: 0.8;
+}
+
+.scroll_right {
+  color: black;
+  background-color: #63710F;
+  position: absolute;
+  top: 45%;
+  right: 45px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.arrow__icon_horta-left {
+  width: 80%;
+  margin-right: 5px;
+  margin-top: 5px;
+  transform: rotate(270deg);
+}
+
+.arrow__icon_horta-right {
+  width: 80%;
+  margin-left: 5px;
+  margin-top: 5px;
+  transform: rotate(90deg);
 }
