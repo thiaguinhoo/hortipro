@@ -1,150 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/Footer.css">
-    <link rel="stylesheet" href="./css/product-list.css" />
-    <title>Lista de Produtos</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/home.html" target="_blank"><img src="./img/logo.png" alt="Logo" /></a>
-        <div class="put">
-          <input type="text" class="nav-put" name="as_word" placeholder="Buscar produtos" maxlength="120" autofocus=""
-            autocapitalize="off" autocorrect="on" spellcheck="false" autocomplete="off" tabindex="2" value=""
-            aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="on" id="search" aria-expanded="false"
-            role="combobox" />
-          <button type="submit" target="search"></button>
-        </div>
-        <div class="menu">
-          <a href="./product-list.html" >Promoções</a>
-          <a href="#" target="_blank"><img id="user" src="./img/user-solid.svg" alt="user" /></a>
-        </div>
-        </div>
-        <div class="carrinho">
-          <a href="#" target="_blank"><img src="./img/carrinho.png" alt="Carrinho" /></a>
-        </div>
-      </nav>
-    </header>
-    <h3>Nossa horta</h3>
-    <br />
-    <br />
-    <br />
-    <section class="nossaHorta">
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Manga-Palmer-Organica-900g---Raizs.jpg"
-            alt="manga"
-          />
-        </a>
-        <p>Manga Palmer Organica<br />900g</p>
-        <button>Adicionar</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/Footer.css">
+  <link rel="stylesheet" href="./css/product-list.css" />
+  <title>Lista de Produtos</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/home.html" target="_blank"><img src="./img/logo.png" alt="Logo" /></a>
+      <div class="put">
+        <input type="text" class="nav-put" name="as_word" placeholder="Buscar produtos" maxlength="120" autofocus=""
+          autocapitalize="off" autocorrect="on" spellcheck="false" autocomplete="off" tabindex="2" value=""
+          aria-activedescendant="" aria-controls="cb1-list" aria-autocomplete="on" id="search" aria-expanded="false"
+          role="combobox" />
+        <button type="submit" target="search"></button>
       </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Abobrinha-Italiana-Organica--600g---800g----Raizs.jpg"
-            alt="abobrinha"
-          />
-        </a>
-        <p>Abobrinha Italiana Organica<br />600g-800g</p>
-        <button>Adicionar</button>
+      <div class="menu">
+        <a href="./product-list.html">Promoções</a>
+        <a href="#" target="_blank"><img id="user" src="./img/user-solid.svg" alt="user" /></a>
       </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg"
-            alt="banana"
-          />
-        </a>
-        <p>Banana Prata Organica<br />600g-800g</p>
-        <button>Adicionar</button>
       </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Tomate-Italiano-Organico--500g---600g----Raizs.jpg"
-            alt="tomate"
-          />
-        </a>
-        <p>Tomate Italiano Organico<br />500g-600g</p>
-        <button>Adicionar</button>
+      <div class="carrinho">
+        <a href="#" target="_blank"><img src="./img/carrinho.png" alt="Carrinho" /></a>
       </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Cenoura-Organica--500g---600g----Raizs.jpg"
-            alt="cenoura"
-          />
-        </a>
-        <p>Cenoura Organica<br />500g</p>
-        <button>Adicionar</button>
+    </nav>
+  </header>
+  <section class="body_lista_produtos">
+    <h2>Produtos</h2>
+    <section class="lista_proutos">
+      <h2 id="lista_produtos-categoria-text">Horta</h2>
+      <div class="lista_produtos-categoria">
+
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+      <h2 id="lista_produtos-categoria-text">Mercearia</h2>
+      <div class="lista_produtos-categoria">
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
+        <div class="lista_produtos-produto">
+          <img src="./imgs/Banana-Prata-Organica--600g---800g----Raizs.jpg" alt="" class="lista_produtos-imagem">
+          <h3>Banana Prata Organica</h3>
+          <div class="lista_produtos-produto-info">
+            <div>
+              <p>quantidade: 12 unidades</p>
+              <p>preço: R$ 6,00</p>
+            </div>
+            <img src="./imgs/like.svg" width="30px" alt="" class="lista_produtos-produto-like">
+          </div>
+          <button type="button" class="lista_produtos-produto-button">Adicionar ao Carrinho</button>
+        </div>
       </div>
     </section>
-    <br />
-    <br />
-    <h3>Mercearia</h3>
-    <br />
-    <br />
-    <br />
-    <section class="mercearia">
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Tofu-Firme-Organico-250g---Ecobras.jpg"
-            alt="tofu"
-          />
-        </a>
-        <p>Tofu Firme Organico<br />250g</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Feijao-Carioca-Organico-500g---Pantera.jpg"
-            alt="feijão"
-          />
-        </a>
-        <p>Feijão Carioca Organico<br />500g</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Arroz-Agulinha-Polido-Organico-Biodinamico-1kg---Volkmann.jpg"
-            alt="arroz"
-          />
-        </a>
-        <p>Arroz-Agulinha Polido Organico Biodinamico 1kg</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Pao-100--integral-de-fermentacao-natural-500g---Garimpeiro.jpg"
-            alt="pão integral"
-          />
-        </a>
-        <p>Pão 100% Integral de Fermentação Natural 500g</p>
-        <button>Adicionar</button>
-      </div>
-      <div class="productList">
-        <a href="#" target="_blank"
-          ><img
-            src="./imgs/Pao-Artesanal-600g---Tartaruga.jpg"
-            alt="pão artesanal"
-          />
-        </a>
-        <p>Pão Artesanal<br />600g</p>
-        <button>Adicionar</button>
-      </div>
-    </section>
-    <footer>
+  </section>
+
+  <!-- <footer>
       <div class="logoFooter">
         <img src="./img/logo.png" alt="Logo HortiPró" />
         <p>Copyright © 2022 DH LTDA.</p>
@@ -172,6 +217,7 @@
           <button target="emailNewslatter" type="submit">Inscreva-se</button>
         </div>
       </form>
-    </footer>
-  </body>
+    </footer> -->
+</body>
+
 </html>
