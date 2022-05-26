@@ -1,119 +1,143 @@
+/* FIM DO BOTÃO DO CARRINHO */
 
-  /* FIM DO BOTÃO DO CARRINHO */
-  
-  .cesta-de-compras{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .nav-cart {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-cart li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
-  
-  .cart {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .cart div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 500000px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-cart {
-      padding: 15vh;
-      position: absolute;
-      top: 5vh;
-      right: 0;
-      width: 50vw;
-      height: 99vh;
-      background: #285d56;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-cart li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .cart {
-      display: block;
-    }
-  }
-  
-  .nav-cart.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .cart.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .cart.active .line2 {
-    opacity: 0;
-  }
-  
-  .cart.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+.cesta-de-compras {
+  width: 30px;
+  height: 30px;
+}
 
-   /* FIM DO BOTÕA DO CARRINHO */
+.nav-cart {
+  position: absolute;
+  text-align: center;
+  top: 48px;
+  right: 0;
+  width: 100%;
+  height: 96vh;
+  background: #BCBC2A;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+}
+
+.nav-cart h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#produtos-carrinho {
+  height: 80vh;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #DEBF4B;
+  border-radius: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: scroll;
+}
+
+#produtos-carrinho::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 120px;
+  min-height: 120px;
+  width: 310px;
+  margin: 20px auto;
+  background-color: #63710F;
+  border-radius: 30px;
+}
 
 
-   /* CARRINHO */
 
-   .nav-cart{
-    background-color: #BCBC2A;
-   }
-
-   .nav-cart-item {
-    display: flex;
-    padding: 5vh;
-    align-items: center;
+.nav-cart-item h3 {
+  width: 100px;
+  flex-wrap: wrap;
 }
 
 .nav-cart-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+  width: 80px;
+  height: 70px;
+  border-radius: 22px;
+  margin-left: -20px;
 }
 
-.nav-cart-item h3{
-    font-size: 1.5rem;
-    margin-right: 2vh;
+.item-quantidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 60px;
+  height: 34px;
+  background-color: whitesmoke;
+  border-radius: 20px;
 }
 
-.nav-cart-item p{
-    font-size: 1rem;
-    margin-right: 2vh;
+.item-menos {
+  border-radius: 50px;
+  margin-left: 5px;
 }
 
-.item-mais, .item-menos{
-  
+.item-mais {
+  border-radius: 50px;
+  margin-right: 5px;
 }
+
+.nav-cart li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.cart {
+  display: none;
+  cursor: pointer;
+}
+
+.cart div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.cart {
+  display: block;
+}
+
+.nav-cart.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* .cart.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.cart.active .line2 {
+  opacity: 0;
+}
+
+.cart.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+} */
