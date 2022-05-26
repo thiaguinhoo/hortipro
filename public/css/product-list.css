@@ -32,7 +32,7 @@
   display: block;
 }
 
-.lista_produtos-categoria {
+#horta-produtos, #mercearia-produtos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
