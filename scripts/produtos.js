@@ -58,42 +58,68 @@ const produtos = [
 //ADD PRODUTOS
 
 adicionarProdutoHorta = () => {
-  var containerProdutos = document.getElementById('horta-produtos');
+  var containerProdutos = document.getElementById("horta-produtos");
   produtos.map((val) => {
-    containerProdutos.innerHTML += `
+    containerProdutos.innerHTML +=
+      `
         <div class="lista_produtos-produto">
-          <img src="`+val.imagem+`" alt="`+val.imagem+`" class="lista_produtos-imagem">
-          <h3>`+val.nome+`</h3>
+          <img src="` +
+      val.imagem +
+      `" alt="` +
+      val.imagem +
+      `" class="lista_produtos-imagem">
+          <h3>` +
+      val.nome +
+      `</h3>
           <div class="lista_produtos-produto-info">
             <div>
-              <p>`+val.preco+`</p>
-              <p>Estoque: `+val.estoque+`</p>
+              <p>` +
+      val.preco +
+      `</p>
+              <p>Estoque: ` +
+      val.estoque +
+      `</p>
             </div>
           </div>
-          <button type="button" class="lista_produtos-produto-button" key="`+val.id+`">Adicionar ao Carrinho</button>
+          <button type="button" class="lista_produtos-produto-button" key="` +
+      val.id +
+      `">Adicionar ao Carrinho</button>
         </div>
     `;
-  })
-}
+  });
+};
 
 adicionarProdutoMercearia = () => {
-  var containerProdutos = document.getElementById('mercearia-produtos');
+  var containerProdutos = document.getElementById("mercearia-produtos");
   produtos.map((val) => {
-    containerProdutos.innerHTML += `
+    containerProdutos.innerHTML +=
+      `
         <div class="lista_produtos-produto">
-          <img src="`+val.imagem+`" alt="`+val.imagem+`" class="lista_produtos-imagem">
-          <h3>`+val.nome+`</h3>
+          <img src="` +
+      val.imagem +
+      `" alt="` +
+      val.imagem +
+      `" class="lista_produtos-imagem">
+          <h3>` +
+      val.nome +
+      `</h3>
           <div class="lista_produtos-produto-info">
             <div>
-              <p>`+val.preco+`</p>
-              <p>Estoque: `+val.estoque+`</p>
+              <p>` +
+      val.preco +
+      `</p>
+              <p>Estoque: ` +
+      val.estoque +
+      `</p>
             </div>
           </div>
-          <button type="button" class="lista_produtos-produto-button" key="`+val.id+`">Adicionar ao Carrinho</button>
+          <button type="button" class="lista_produtos-produto-button" key="` +
+      val.id +
+      `">Adicionar ao Carrinho</button>
         </div>
     `;
-  })
-}
+  });
+};
 
 adicionarProdutoHorta();
 adicionarProdutoMercearia();
@@ -101,31 +127,40 @@ adicionarProdutoMercearia();
 // FUNCIONALIDADES DO CARRINHO //
 
 atualizarCarrinho = () => {
-  var containerCarrinho = document.getElementById('produtos-carrinho');
-  containerCarrinho.innerHTML = '';
+  var containerCarrinho = document.getElementById("produtos-carrinho");
+  containerCarrinho.innerHTML = "";
   produtos.map((val) => {
-    if(val.quantidade > 0){
-      containerCarrinho.innerHTML += `
+    if (val.quantidade > 0) {
+      containerCarrinho.innerHTML +=
+        `
         <div class="nav-cart-item">
-          <img src="`+val.imagem+`" alt="`+val.imagem+`" class="nav-cart-item-imagem">
-          <h3>"`+val.nome+`</h3>
+          <img src="` +
+        val.imagem +
+        `" alt="` +
+        val.imagem +
+        `" class="nav-cart-item-imagem">
+          <h3>"` +
+        val.nome +
+        `</h3>
+        <div class="item-quantidade">
           <button class="item-menos">-</button>
-          <div class="item-quantidade">`+val.quantidade+`</div>
+          <div class="item-quantidade">` +
+        val.quantidade +
+        `</div>
           <button class="item-mais">+</button>
+          </div>
         </div>
       `;
     }
-  })
-}
+  });
+};
 
-let links = document.querySelectorAll('.lista_produtos-produto-button');
+let links = document.querySelectorAll(".lista_produtos-produto-button");
 
-for(var i = 0; i < links.length; i++){
-  links[i].addEventListener('click', function(){
-    let key = this.getAttribute('key');
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function () {
+    let key = this.getAttribute("key");
     produtos[key].quantidade++;
     atualizarCarrinho();
-  })
-  
+  });
 }
-
