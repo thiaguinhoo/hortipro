@@ -32,13 +32,21 @@
   display: block;
 }
 
-#horta-produtos, #mercearia-produtos {
+#horta-produtos,
+#mercearia-produtos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   overflow-x: scroll;
-  margin-bottom: 40px;
   margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+#horta-produtos::-webkit-scrollbar,
+#mercearia-produtos::-webkit-scrollbar {
+  display: none;
 }
 
 .lista_produtos-categoria::-webkit-scrollbar {
@@ -92,11 +100,11 @@
   margin-bottom: 15px;
 }
 
-.scroll_left {
+.scroll_left--horta {
   color: black;
   background-color: #63710F;
   position: absolute;
-  top: 45%;
+  top: 400px;
   left: 45px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -105,19 +113,19 @@
   border-radius: 50px;
 }
 
-.scroll_left:hover {
+.scroll_left--horta:hover {
   opacity: 0.8
 }
 
-.scroll_right:hover {
+.scroll_right--horta:hover {
   opacity: 0.8;
 }
 
-.scroll_right {
+.scroll_right--horta {
   color: black;
   background-color: #63710F;
   position: absolute;
-  top: 45%;
+  top: 400px;
   right: 45px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -134,6 +142,55 @@
 }
 
 .arrow__icon_horta-right {
+  width: 80%;
+  margin-left: 5px;
+  margin-top: 5px;
+  transform: rotate(90deg);
+}
+
+
+.scroll_left--mercearia {
+  color: black;
+  background-color: #63710F;
+  position: absolute;
+  top: 1000px;
+  left: 45px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.scroll_left--mercearia:hover {
+  opacity: 0.8
+}
+
+.scroll_right--mercearia:hover {
+  opacity: 0.8;
+}
+
+.scroll_right--mercearia {
+  color: black;
+  background-color: #63710F;
+  position: absolute;
+  top: 1000px;
+  right: 45px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.arrow__icon_mercearia-left {
+  width: 80%;
+  margin-right: 5px;
+  margin-top: 5px;
+  transform: rotate(270deg);
+}
+
+.arrow__icon_mercearia-right {
   width: 80%;
   margin-left: 5px;
   margin-top: 5px;

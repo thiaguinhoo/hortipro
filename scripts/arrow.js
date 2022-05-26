@@ -1,23 +1,43 @@
 var scrolling = false;
-let step = 400
+let step = 400;
 
-const scrollLeft = document.querySelector(".scroll_left")
-const scrollRight = document.querySelector(".scroll_right")
-const listaHorta = document.querySelector(".lista_produtos-categoria")
+const scrollLeftHorta = document.querySelector(".scroll_left--horta");
+const scrollRightHorta = document.querySelector(".scroll_right--horta");
 
+const scrollLeftMercearia = document.querySelector(".scroll_left--mercearia");
+const scrollRightMercearia = document.querySelector(".scroll_right--mercearia");
 
-scrollLeft.addEventListener("click", (event) => {
-  event.preventDefault()
+const listaHorta = document.querySelector("#horta-produtos");
+const listaMercearia = document.querySelector("#mercearia-produtos");
+
+scrollLeftHorta.addEventListener("click", (event) => {
+  event.preventDefault();
   listaHorta.scrollBy({
     left: -step,
-    behavior: "smooth"
-})
-})
+    behavior: "smooth",
+  });
+});
 
-scrollRight.addEventListener("click", (event) => {
-  event.preventDefault()
+scrollRightHorta.addEventListener("click", (event) => {
+  event.preventDefault();
   listaHorta.scrollBy({
     left: step,
-    behavior: "smooth"
-})
-})
+    behavior: "smooth",
+  });
+});
+
+scrollLeftMercearia.addEventListener("click", (event) => {
+  event.preventDefault();
+  listaMercearia.scrollBy({
+    left: -step,
+    behavior: "smooth",
+  });
+});
+
+scrollRightMercearia.addEventListener("click", (event) => {
+  event.preventDefault();
+  listaMercearia.scrollBy({
+    left: step,
+    behavior: "smooth",
+  });
+});
