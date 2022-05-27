@@ -50,16 +50,14 @@ const userController = {
 
     if (usuario === null) {
       return res.render("login");
-      //res.json({ msg: 'Login ou Senha invalida(o)!' });
     } else {
       if (
         (req.body.email == usuario.email) &
         (req.body.senha == usuario.senha)
       ) {
         return res.render("finalizacao-compra");
-        //return res.json({ msg: `Seja Bem Vindo ${usuario.email}` });
       } else {
-        return res.render("login"); //res.json({ msg: 'Login ou Senha invalida(o)!' });
+        return res.render("login");
       }
     }
   },

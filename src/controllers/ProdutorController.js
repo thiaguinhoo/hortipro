@@ -16,7 +16,6 @@ const productorController = {
       cep,
     } = req.body;
 
-    // try {
     if (await Produtor.findOne({ where: { cpf: cpf } }))
       return res.status(400).send({ error: "User cpf already exists" });
 
@@ -36,9 +35,6 @@ const productorController = {
     return res.send({
       produtor,
     });
-    // } catch (err) {
-    //   return res.status(400).send({ error: "Registration failed" });
-    // }
   },
 };
 

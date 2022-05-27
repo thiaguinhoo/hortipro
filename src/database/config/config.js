@@ -2,7 +2,7 @@ module.exports = {
   dialect: "mysql",
   database: "hortipro",
   host: "localhost",
-  port: 3307,
+  port: 3306,
   username: "root",
   password: "hortipro",
   define: {
