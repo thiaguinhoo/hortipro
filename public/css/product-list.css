@@ -7,7 +7,7 @@
 
 .body_lista_produtos {
   color: white;
-  background-color: #BCBC2A;
+  background-color: #bcbc2a;
   color: black;
   padding-top: 30px;
   margin-top: 48px;
@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.lista_proutos {
+.lista_produtos {
   background-color: #858943;
   width: 95vw;
   padding-top: 25px;
@@ -42,8 +42,6 @@
   padding-bottom: 40px;
 }
 
-
-
 #horta-produtos::-webkit-scrollbar,
 #mercearia-produtos::-webkit-scrollbar {
   display: none;
@@ -53,11 +51,10 @@
   display: none;
 }
 
-
 .lista_produtos-produto {
   display: flex;
   flex-direction: column;
-  background-color: #63710F;
+  background-color: #63710f;
   border-radius: 45px;
   width: 350px;
   padding-top: 35px;
@@ -77,14 +74,15 @@
   justify-content: space-between;
 }
 
-.lista_produtos-produto-like {}
+.lista_produtos-produto-like {
+}
 
 .lista_produtos-produto-button {
   align-self: center;
   width: 200px;
   height: 30px;
   border-radius: 15px;
-  background-color: #353D01;
+  background-color: #353d01;
   color: white;
   margin-top: 15px;
 }
@@ -102,7 +100,7 @@
 
 .scroll_left--horta {
   color: black;
-  background-color: #63710F;
+  background-color: #63710f;
   position: absolute;
   top: 400px;
   left: 45px;
@@ -114,7 +112,7 @@
 }
 
 .scroll_left--horta:hover {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 .scroll_right--horta:hover {
@@ -123,7 +121,7 @@
 
 .scroll_right--horta {
   color: black;
-  background-color: #63710F;
+  background-color: #63710f;
   position: absolute;
   top: 400px;
   right: 45px;
@@ -148,10 +146,9 @@
   transform: rotate(90deg);
 }
 
-
 .scroll_left--mercearia {
   color: black;
-  background-color: #63710F;
+  background-color: #63710f;
   position: absolute;
   top: 1000px;
   left: 45px;
@@ -163,7 +160,7 @@
 }
 
 .scroll_left--mercearia:hover {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 .scroll_right--mercearia:hover {
@@ -172,7 +169,7 @@
 
 .scroll_right--mercearia {
   color: black;
-  background-color: #63710F;
+  background-color: #63710f;
   position: absolute;
   top: 1000px;
   right: 45px;

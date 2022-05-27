@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produtos</title>
+  <%- include("../partials/head") %>
+    <link rel="stylesheet" href="./css/cadastroprodutos.css">
+    <!-- <link rel="stylesheet" href="./css/menu.css"> -->
+    <!-- <link rel="stylesheet" href="./css/Footer.css"> -->
+    <link rel="stylesheet" href="./css/carrinho.css">
+</head>
+
+<body>
+  <%- include("../partials/header") %>
+    <div id="main-container">
+      <div id="logo">
+        <center>
+          <a href="/"><img src="./img/logoHortiproPNG2.png" width="35%" alt="logo"></a>
+        </center>
+      </div>
+      <br>
+      <h1>Cadastre seus produtos</h1>
+      <form id="register-form">
+        <a href="#"><img src="./img/fotoproduto.png" alt="Fotoproduto"></a>
+        <div class="full-box">
+          <label for="fotodoproduto">Foto</label>
+          <input type="text" name="fotodoproduto" id="fotodoproduto" placeholder="Coloque a foto do seu produto">
+        </div>
+        <div class="full-box">
+          <label for="nomedoproduto">Nome</label>
+          <input type="text" name="nomedoproduto" id="nomedoproduto" placeholder="Digite o nome do seu produto">
+        </div>
+        <div class="full-box">
+          <label for="quantidadedoproduto">Quantidade</label>
+          <input type="text" name="quantidadedoproduto" id="quantidadedoproduto"
+            placeholder="Digite a quantidade disponível do seu produto">
+        </div>
+        <div class="full-box">
+          <label for="unidadedoproduto">Unidade de medida</label>
+          <input type="text" name="unidadedoproduto" id="unidadedoproduto"
+            placeholder="Digite a unidade de medida do seu produto">
+        </div>
+        <div class="full-box">
+          <label for="valordoproduto">Valor</label>
+          <input type="text" name="valordoproduto" id="valordoproduto"
+            placeholder="Digite o valor do seu produto em sua quantidade mínima">
+        </div>
+        <div class="full-box">
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement" id="agreement-label">Eu li e aceito os <a href="/termos-e-condicoes">Termos de
+              uso</a></label>
+        </div>
+        </br>
+        <div class="full-box">
+          <input type="submit" id="btn-submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+    <p class="error-validation template"></p>
+    <%- include("../partials/footer") %>
+      <script src="cadastroprodutos.js"></script>
+      <script src="./scripts/carrinho.js"></script>
+</body>
+
+</html>

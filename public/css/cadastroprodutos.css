@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   list-style-type: none;
-  border:0px
+  border: 0px;
 }
 label {
   display: inline-block;
@@ -108,7 +108,6 @@ input:focus {
   color: #fff;
   border: none;
   border-radius: 20px;
-  height: 40px;
   cursor: pointer;
 }
 
@@ -127,7 +126,7 @@ input:focus {
   width: auto;
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media (min-width: 481px) and (max-width: 767px) {
   #main-container {
     width: 90%;
     margin-left: auto;
@@ -137,40 +136,24 @@ input:focus {
     padding: 25px;
     margin-top: 100px;
     margin-bottom: 50px;
+  }
 }
 
-}
-
-@media (min-width: 768px) and (min-width: 1281px){
-  .container-p{
+@media (min-width: 768px) and (min-width: 1281px) {
+  .container-p {
     margin: 20px;
     margin-top: 80px;
-    
-
   }
 
-
-  div.container-p{
+  div.container-p {
     font-size: 26px;
   }
 
-
-  .container-p2{
+  .container-p2 {
     margin-left: 20px;
-   
-    
-
   }
 
-
-  div.container-p2{
+  div.container-p2 {
     font-size: 26px;
   }
-
-
-
 }
-
-
-
-

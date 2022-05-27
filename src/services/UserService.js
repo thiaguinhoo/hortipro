@@ -1,6 +1,5 @@
 const User = require("../database/models/Usuario");
 const { Op } = require("sequelize");
-const { findOne } = require("../database/models/Usuario");
 
 const UserService = {
   createUser: async (email, senha, ativo, catalogo_oferta, termo_de_aceite) => {
@@ -14,7 +13,6 @@ const UserService = {
 
     return newUser;
   },
-
 
   deleteUser: async (id) => {
     const user = await User.destroy({

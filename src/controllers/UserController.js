@@ -43,7 +43,7 @@ const userController = {
     return res.send({ msg: "User not found" });
   },
 
-  logar: async (req, res) => {
+  signIn: async (req, res) => {
     const { email, senha } = req.body;
 
     const usuario = await UserService.getUserByLogin(email);

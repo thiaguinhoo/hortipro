@@ -1,64 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Poppins, sans-serif;
+body{
+  background-image: url(../img/agricultor-2.jpg);
+  background-blend-mode:darken;
+  background: rgba(0, 0, 0, 0.6) url(../img/agricultor-2.jpg) ;
+  height: 100%;
+ 
+ 
+  background-blend-mode: darken;
+  
 }
 
-body {
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.title {
+.container-main{
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 95%;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.subtitle {
-  font-size: 1.2rem;
+.container-main h1{
+color: #fff;
 }
 
-.container {
-  background-color: #f8f6f4;
+.container-main a{
+  color: #ffffff;
+  font-weight: 400;
+  text-align:left
+  
+}
+
+.container-main h4,h3{
+  color: #bfdc00;
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.container-main p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#fundo{
+  background-color: #353d0173;
   padding: 10px;
-  width: 80vw;
-  padding: 40px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-#main-container {
-  background: linear-gradient(45deg, #285d56, #c8d25c);
-  background-repeat: no-repeat;
-  padding: 10px;
-}
-
-#main-container h1 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 2em;
-}
-
-#main-container h3 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 1.25em;
-}
-
-#main-container p {
-  text-align: justify;
-  font-size: 1em;
-}
-
-@media screen and (max-width: 420px) {
-
-  .inline {
-    text-align: center!important;
-    margin-top: 20px;
-  }
-
-  .inline-block {
-    display: block;
-  }
+  padding-top: 5px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(20px);
+  margin-bottom: 40px;
+  text-align:left
 
 }
+

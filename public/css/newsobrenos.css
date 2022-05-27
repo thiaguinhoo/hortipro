@@ -1,0 +1,52 @@
+body {
+  background-image: url(../img/agricultor-1.jpeg);
+  background-blend-mode: darken;
+}
+
+.container-main {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 95%;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 35px;
+  color: #fff;
+}
+
+#text1,
+#text2 {
+  /* color: #e2e275; */
+  color: white;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+}
+
+#text1 {
+  background-color: #353d0173;
+
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#text2 {
+  background-color: #353d0173;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  #text1,
+  #text2 {
+    padding-bottom: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+}

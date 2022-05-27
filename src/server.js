@@ -1,10 +1,11 @@
 "use strict";
+require("dotenv").config();
 const routes = require("express").Router();
-
-const {} = require("./database");
+require("./database");
 
 const app = require("./app");
 const logger = require("./utils/logger");
+
 app.use(routes);
 
 const SERVER_PORT = process.env.SERVER_PORT || 3333;

@@ -30,20 +30,6 @@ class UserModel extends Model {
             },
           },
         },
-        ativo: {
-          type: DataTypes.BOOLEAN,
-          allowNull: false,
-          defaultValue: true,
-        },
-        catalogo_oferta: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-        },
-        termo_de_aceite: {
-          type: DataTypes.BOOLEAN,
-          allowNull: false,
-          defaultValue: false,
-        },
       },
       { sequelize, tableName: "USUARIO" }
     );

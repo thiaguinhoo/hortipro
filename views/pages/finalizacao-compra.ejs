@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include("../partials/head") %>
+    <!-- <link rel="stylesheet" href="./css/menu.css"> -->
+    <!-- <link rel="stylesheet" href="./css/Footer.css"> -->
+    <link rel="stylesheet" href="./css/finalizacao-compra.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <title>Finalização de Compra</title>
+</head>
+
+
+<body>
+  <%- include("../partials/header") %>
+
+    <section class="painel">
+      <h1><strong>Minha Cesta</strong></h1>
+
+      <section id="produtovalor">
+        <br>
+        <div class="produtoimg">
+          <img src="./img/m.jpg" width="300" height="300">
+        </div>
+
+        <div class="dadosproduto">
+
+          <h3>Maçã Fugi 500g</h3>
+          <h4>R$2,90</h4>
+          <h6>Peso da unidade:250g</h6>
+        </div>
+
+        <div class="quantidade">
+          <input type="number" name="quantidadedoproduto" placeholder="Quantidade">
+        </div>
+
+        <div cass="total">
+          <h2>TOTAL: R$2,90</h2>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="valorfinal">
+
+        <div class="endereco">
+          <a href="">Enviar para Rua Manuel Carneiro, Santa Tereza, RJ</a>
+        </div>
+
+        <div class="retirada">
+          <a href="">Retira Rápido</a>
+        </div>
+
+        <div class="totalfrete">
+          <h6>Total com frete: R$5,80</h6>
+        </div>
+
+      </section>
+
+      <div cass="confirmarcompra">
+        <input type="submit" id="btn-submit" value="Confirmar Compra">
+      </div>
+    </section>
+    <%- include("../partials/footer") %>
+      <script src="./scripts/carrinho.js"></script>
+
+</body>
+
+</html>

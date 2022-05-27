@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- include("../partials/head") %>
+    <link rel="stylesheet" href="./css/product-list.css" />
+    <link rel="stylesheet" href="./css/carrinho.css">
+    <title>Lista de Produtos</title>
+</head>
+
+<body>
+  <%- include("../partials/header") %>
+    <section class="body_lista_produtos">
+      <h2>Produtos</h2>
+      <section class="lista_produtos">
+        <h2 id="lista_produtos-categoria-text">Horta</h2>
+        <div id="horta-produtos">
+          <% if (!horta.length) { %>
+            <h2>Não existem produtos cadastrados na horta</h2>
+            <% } %>
+        </div>
+        <h2 id="lista_produtos-categoria-text">Mercearia</h2>
+        <div id="mercearia-produtos">
+          <% if (!mercearia.length) { %>
+            <h2>Não existem produtos cadastrados na mercearia</h2>
+            <% } %>
+        </div>
+      </section>
+    </section>
+    <% include("../partials/footer"); %>
+      <button type="button" onclick="" class="scroll_left--horta"> <img src="./arrow-icon.svg" alt=""
+          class="arrow__icon_horta-left"> </button>
+      <button type="button" onclick="" class="scroll_right--horta"> <img src="./arrow-icon.svg" alt=""
+          class="arrow__icon_horta-right"> </button>
+      <button type="button" onclick="" class="scroll_left--mercearia"> <img src="./arrow-icon.svg" alt=""
+          class="arrow__icon_mercearia-left"> </button>
+      <button type="button" onclick="" class="scroll_right--mercearia"> <img src="./arrow-icon.svg" alt=""
+          class="arrow__icon_mercearia-right"> </button>
+      <script src="./scripts/arrow.js"></script>
+      <script src="./scripts/carrinho.js"></script>
+      <script src="./scripts/produtos.js"></script>
+</body>
+
+</html>
