@@ -9,4 +9,6 @@ router.route("/:id").delete(userController.delete);
 
 router.post("/sign-in", userController.signIn);
 
+router.post("/register", userController.register);
+
 module.exports = router;

@@ -26,7 +26,7 @@ const UserService = {
   getUserByLogin: async (email) => {
     const user = await User.findOne({
       where: {
-        [Op.and]: [{ email: email }, { ativo: 1 }],
+        [Op.and]: [{ email: email }],
       },
     });
     return user;

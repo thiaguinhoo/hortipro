@@ -12,7 +12,7 @@ ProdutorModel.init(
       allowNull: false,
     },
     id_usuario: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     id_endereco: {
@@ -25,8 +25,8 @@ ProdutorModel.init(
       unique: true,
       validate: {
         len: {
-          args: [11, 11],
-          msg: "CPF deve ter 11 caracteres",
+          args: [14, 14],
+          msg: "CPF deve ter 14 caracteres",
         },
       },
     },
@@ -55,8 +55,8 @@ ProdutorModel.init(
       allowNull: true,
       validate: {
         len: {
-          args: [8, 8],
-          msg: "Telefone deve ter entre 10 e 11 caracteres",
+          args: [14, 15],
+          msg: "Telefone deve ter entre 14 e 15 caracteres",
         },
       },
     },
@@ -65,38 +65,18 @@ ProdutorModel.init(
       allowNull: false,
       validate: {
         len: {
-          args: [10, 11],
-          msg: "Celular deve ter entre 10 e 11 caracteres",
+          args: [15, 15],
+          msg: "Celular deve ter 15 caracteres",
         },
       },
     },
     id_endereco: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         len: {
           args: [1, 11],
           msg: "ID_ENDERECO deve ter entre 1 e 11 caracteres",
-        },
-      },
-    },
-    rua: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: {
-          args: [3, 255],
-          msg: "Rua deve ter entre 3 e 255 caracteres",
-        },
-      },
-    },
-    cep: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: {
-          args: [8, 8],
-          msg: "CEP deve ter 8 caracteres",
         },
       },
     },

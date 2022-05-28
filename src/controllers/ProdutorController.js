@@ -27,9 +27,6 @@ const productorController = {
       celular,
       id_endereco,
       id_usuario,
-      id_produtor,
-      rua,
-      cep
     );
 
     return res.send({
