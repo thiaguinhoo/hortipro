@@ -11,8 +11,8 @@ ClienteModel.init(
       unique: true,
       validate: {
         len: {
-          args: [11, 11],
-          msg: "CPF deve ter 11 caracteres",
+          args: [14, 14],
+          msg: "CPF deve ter 14 caracteres",
         },
       },
     },
@@ -41,8 +41,8 @@ ClienteModel.init(
       allowNull: true,
       validate: {
         len: {
-          args: [8, 8],
-          msg: "Telefone deve ter entre 10 e 11 caracteres",
+          args: [14, 15],
+          msg: "Telefone deve ter entre 14 e 15 caracteres",
         },
       },
     },
@@ -51,32 +51,26 @@ ClienteModel.init(
       allowNull: false,
       validate: {
         len: {
-          args: [10, 11],
-          msg: "Celular deve ter entre 10 e 11 caracteres",
+          args: [15, 15],
+          msg: "Celular deve ter 15 caracteres",
         },
       },
     },
     id_usuario: {
-      type: DataTypes.STRING,
-      primaryKey: true,
+      type: DataTypes.INTEGER,
       allowNull: false,
       unique: true,
     },
     id_cliente: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
       allowNull: false,
       unique: true,
     },
     id_endereco: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: {
-          args: [8, 8],
-          msg: "seu CEP deve ter 8 caracteres",
-        },
-      },
+      type: DataTypes.INTEGER,
+      allowNull: false
     },
     created_date: {
       type: DataTypes.DATE,

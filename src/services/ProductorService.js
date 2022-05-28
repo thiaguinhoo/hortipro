@@ -8,10 +8,7 @@ const ProductorService = {
     telefone,
     celular,
     id_endereco,
-    id_usuario,
-    id_produtor,
-    rua,
-    cep
+    id_usuario
   ) => {
     const newProductor = await Productor.create({
       cpf,
@@ -20,10 +17,7 @@ const ProductorService = {
       telefone,
       celular,
       id_endereco,
-      id_usuario,
-      id_produtor,
-      rua,
-      cep,
+      id_usuario
     });
     return newProductor;
   },

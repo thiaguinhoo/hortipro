@@ -8,7 +8,6 @@ const ClientService = {
     telefone,
     celular,
     id_usuario,
-    id_cliente,
     id_endereco
   ) => {
     const newClient = await Cliente.create({
@@ -18,10 +17,8 @@ const ClientService = {
       telefone,
       celular,
       id_usuario,
-      id_cliente,
       id_endereco,
     });
-
     return newClient;
   },
 };

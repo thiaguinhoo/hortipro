@@ -16,18 +16,17 @@
       <h1>Cadastre-se</h1>
       <h2>Insira suas informações para criar uma conta</h2>
 
-      <form class="info">
-        <div class="box">
-          <label>Você é:</label>
-          <br />
-          <input type="radio" id="client" name="same" />
-          <label for="client" id="client-label">Sou Cliente</label>
-          <input type="radio" id="productor" name="same" value="productor" />
-          <label for="productor" id="productor-label">Sou Produtor</label>
+      <form id="register-form" action="api/user/register" method="post">
+        <div class="info">
+          <div class="box">
+            <label>Você é:</label>
+            <br />
+            <input type="radio" id="client" name="usuario_tipo" value="cliente" />
+            <label for="client" id="client-label">Sou Cliente</label>
+            <input type="radio" id="productor" name="usuario_tipo" value="produtor" />
+            <label for="productor" id="productor-label">Sou Produtor</label>
+          </div>
         </div>
-      </form>
-
-      <form id="register-form">
         <div class="full-box">
           <label for="email">E-mail</label>
           <input
@@ -65,11 +64,11 @@
         </div>
 
         <div class="half-box">
-          <label for="last-name">Sobrenome</label>
+          <label for="last_name">Sobrenome</label>
           <input
-            type="last-name"
-            name="last-name"
-            id="last-name"
+            type="last_name"
+            name="last_name"
+            id="last_name"
             placeholder="Digite o seu sobrenome"
             data-required
             data-only-letters
@@ -106,35 +105,35 @@
             id="phone"
             name="phone"
             placeholder="(xx) xxxx-xxxx"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            pattern="^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$"
           />
         </div>
 
         <div class="half-box">
-          <label for="cell-phone">Digite o telefone celular:</label>
+          <label for="cell_phone">Digite o telefone celular:</label>
           <input
             type="tel"
-            id="cell-phone"
-            name="cell-phone"
+            id="cell_phone"
+            name="cell_phone"
             placeholder="(xx) xxxxx-xxxx"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            pattern="^\(?\d{2}\)?[\s-]?[\s9]?\d{5}-?\d{4}$"
           />
         </div>
 
         <div class="half-box spacing">
-          <label for="local-city">Cidade</label>
+          <label for="local_city">Cidade</label>
           <input
             type="text"
-            id="local-city"
-            name="local-city"
+            id="local_city"
+            name="local_city"
             placeholder="Sua Cidade"
           />
         </div>
 
         <div class="half-box">
-          <label for="local-state">Seu Estado</label>
+          <label for="local_state">Seu Estado</label>
 
-          <select id="UF" name="UF">
+          <select id="uf" name="uf">
             <option value="">Selecione</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
@@ -167,21 +166,21 @@
         </div>
 
         <div class="half-box spacing">
-          <label for="local-street">Rua</label>
+          <label for="local_street">Rua</label>
           <input
             type="text"
-            id="local-street"
-            name="local-street"
+            id="local_street"
+            name="local_street"
             placeholder="Rua A, n° 123"
           />
         </div>
 
         <div class="half-box">
-          <label for="local-CEP">CEP</label>
+          <label for="local_cep">CEP</label>
           <input
             type="text"
-            name="local-CEP"
-            id="local-CEP"
+            name="local_cep"
+            id="local_cep"
             placeholder="xxxxx-xxx"
             required
             pattern="\d{5}-\d{3}"
