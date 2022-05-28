@@ -121,8 +121,8 @@ adicionarProdutoMercearia = () => {
   });
 };
 
-adicionarProdutoHorta();
-adicionarProdutoMercearia();
+// adicionarProdutoHorta();
+// adicionarProdutoMercearia();
 
 // FUNCIONALIDADES DO CARRINHO //
 

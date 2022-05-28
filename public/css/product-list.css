@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+.subtitle {
+  margin: 0px 0px 10px 0px;
+}
+
 .lista_produtos {
   background-color: #858943;
   width: 95vw;

@@ -1,68 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Produtos</title>
+  <title>Cadastre seu Produto</title>
+  <link href="./css/stylesariane.css" rel="stylesheet">
   <%- include("../partials/head") %>
-    <link rel="stylesheet" href="./css/cadastroprodutos.css">
-    <!-- <link rel="stylesheet" href="./css/menu.css"> -->
-    <!-- <link rel="stylesheet" href="./css/Footer.css"> -->
-    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <%- include("../partials/header") %>
-    <div id="main-container">
-      <div id="logo">
-        <center>
-          <a href="/"><img src="./img/logoHortiproPNG2.png" width="35%" alt="logo"></a>
-        </center>
+    <h1 class="title">Cadastre seu produto</h1>
+    <section class="fundo grid-produto">
+      <div></div>
+      <div>
+        <img class="logohorti" src="./img/imghorti.png">
+        <form method="POST" action="/cadastro-produtos" class="form-cadastro-produto" enctype="multipart/form-data">
+          <label>
+            <span>Nome do Produto</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Tipo do Produto</span>
+            <select name="type" class="select-produto">
+              <option value="horta">Horta</option>
+              <option value="mercearia">Mercearia</option>
+            </select>
+          </label>
+          <label>
+            <span>Local de Produção</span>
+            <input name="local" type="text" required>
+          </label>
+          <label>
+            <span>Quantidade de produto no estoque</span>
+            <input name="quantity" type="number" required>
+          </label>
+          <label class="preco">
+            <span>Preço</span>
+            <input name="price" type="number" required>
+          </label>
+          <label>
+            <span>Descrição do Produto</span>
+            <textarea name="description" id="formação" cols="30" rows="10"></textarea>
+          </label>
+          <label class="adicionar_imagem">
+            <span>Adicionar imagem</span>
+            <input name="file" type="file">
+          </label>
+          <button class="button" type="submit ">Registrar</button>
+        </form>
       </div>
-      <br>
-      <h1>Cadastre seus produtos</h1>
-      <form id="register-form">
-        <a href="#"><img src="./img/fotoproduto.png" alt="Fotoproduto"></a>
-        <div class="full-box">
-          <label for="fotodoproduto">Foto</label>
-          <input type="text" name="fotodoproduto" id="fotodoproduto" placeholder="Coloque a foto do seu produto">
-        </div>
-        <div class="full-box">
-          <label for="nomedoproduto">Nome</label>
-          <input type="text" name="nomedoproduto" id="nomedoproduto" placeholder="Digite o nome do seu produto">
-        </div>
-        <div class="full-box">
-          <label for="quantidadedoproduto">Quantidade</label>
-          <input type="text" name="quantidadedoproduto" id="quantidadedoproduto"
-            placeholder="Digite a quantidade disponível do seu produto">
-        </div>
-        <div class="full-box">
-          <label for="unidadedoproduto">Unidade de medida</label>
-          <input type="text" name="unidadedoproduto" id="unidadedoproduto"
-            placeholder="Digite a unidade de medida do seu produto">
-        </div>
-        <div class="full-box">
-          <label for="valordoproduto">Valor</label>
-          <input type="text" name="valordoproduto" id="valordoproduto"
-            placeholder="Digite o valor do seu produto em sua quantidade mínima">
-        </div>
-        <div class="full-box">
-          <input type="checkbox" name="agreement" id="agreement">
-          <label for="agreement" id="agreement-label">Eu li e aceito os <a href="/termos-e-condicoes">Termos de
-              uso</a></label>
-        </div>
-        </br>
-        <div class="full-box">
-          <input type="submit" id="btn-submit" value="Registrar">
-        </div>
-      </form>
-    </div>
-    <p class="error-validation template"></p>
+    </section>
     <%- include("../partials/footer") %>
-      <script src="cadastroprodutos.js"></script>
-      <script src="./scripts/carrinho.js"></script>
 </body>
 
 </html>

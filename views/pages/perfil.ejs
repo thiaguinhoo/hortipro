@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%- include("../partials/head") %>
     <link rel="stylesheet" href="/css/perfil.css">
-    <link rel="shortcut icon" href="/img/logoHortiproPNG.png">
+    <link rel="shortcut icon" href="/css/logoHortiproPNG.png">
     <title>Perfil</title>
 </head>
-
 
 <%- include("../partials/header") %>
 
@@ -22,44 +21,38 @@
     <div id="fotoPerfil">
       <img src="/img/perfil.jpg">
     </div>
-
     <div id="nome">
-      <h1>Usuario</h1>
+      <h1>Usuário</h1>
     </div>
 
     <div id="seuEmail">
       <a>Seu email</a>
-      <h4>exemplo@teste.com</h4>
-
+      <input type="e-mail" id="email" placeholder="exemplo@gmail.com" name="email" />
     </div>
 
     <div id="numero">
-      <a>Numero</a>
-      <h4>(12) 92345-6789</h4>
-
+      <a>Número</a>
+      <input type="tel" id="numero1" placeholder="(12) 9345-6789" name="number" />
     </div>
 
 
     <div id="cidade">
       <a>Cidade</a>
-      <h4>São Paulo - SP</h4>
+      <input type="text" id="cidade" placeholder="Campinas - SP" name="city" />
 
     </div>
 
     <div id="idade">
       <a>Idade</a>
-      <h4>34 anos</h4>
-
+      <input type="text" id="idade" placeholder="34 anos" name="age" />
     </div>
 
     <button type="submit">Editar</button>
   </div>
 
   <%- include("../partials/footer") %>
-    </div>
 
-
-    <script src="../js/index.js"></script>
+    <script src="./js/index.js"></script>
     </body>
 
 </html>

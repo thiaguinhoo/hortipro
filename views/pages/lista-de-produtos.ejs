@@ -14,19 +14,57 @@
 <body>
   <%- include("../partials/header") %>
     <section class="body_lista_produtos">
-      <h2>Produtos</h2>
+      <h2 class="subtitle">Produtos</h2>
       <section class="lista_produtos">
         <h2 id="lista_produtos-categoria-text">Horta</h2>
         <div id="horta-produtos">
-          <% if (!horta.length) { %>
-            <h2>Não existem produtos cadastrados na horta</h2>
-            <% } %>
+          <% if (horta.length> 0) { %>
+            <% for (let i=0; i < horta.length; i++) { %>
+              <div class="lista_produtos-produto">
+                <img src="<%= horta[i].photo %>" alt="" class="lista_produtos-imagem" />
+                <h3>
+                  <%= horta[i].name %>
+                </h3>
+                <div class="lista_produtos-produto-info">
+                  <div>
+                    <p>
+                      R$ <%= horta[i].price %>
+                    </p>
+                    <p>
+                      Estoque: <%= horta[i].quantity %>
+                    </p>
+                  </div>
+                </div>
+                <button type="button" class="lista_produtos-produto-button" key="<%= horta[i].id %>">Adicionar ao
+                  Carrinho</button>
+              </div>
+              <% }%>
+                <% } %>
         </div>
         <h2 id="lista_produtos-categoria-text">Mercearia</h2>
         <div id="mercearia-produtos">
-          <% if (!mercearia.length) { %>
-            <h2>Não existem produtos cadastrados na mercearia</h2>
-            <% } %>
+          <% if (mercearia.length> 0) { %>
+            <% for (let i=0; i < mercearia.length; i++) { %>
+              <div class="lista_produtos-produto">
+                <img src="<%= mercearia[i].photo %>" alt="" class="lista_produtos-imagem" />
+                <h3>
+                  <%= mercearia[i].name %>
+                </h3>
+                <div class="lista_produtos-produto-info">
+                  <div>
+                    <p>
+                      <%= mercearia[i].price %>
+                    </p>
+                    <p>
+                      Estoque: <%= mercearia[i].quantity %>
+                    </p>
+                  </div>
+                </div>
+                <button type="button" class="lista_produtos-produto-button" key="<%= mercearia[i].id %>">Adicionar ao
+                  Carrinho</button>
+              </div>
+              <% }%>
+                <% } %>
         </div>
       </section>
     </section>

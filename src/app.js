@@ -13,7 +13,7 @@ const clientRoutes = require("./routes/client.routes");
 const productRoutes = require("./routes/product.routes");
 const productorRoutes = require("./routes/productor.routes");
 
-const { publicDir } = require("../config");
+const { publicDir, uploadsDir } = require("../config");
 const db = require("./database/models");
 
 const app = express();
@@ -29,6 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // public directory with static files
 app.use(express.static(publicDir));
+app.use(express.static(uploadsDir));
 
 // users routes
 app.get("/", userRoutes);
